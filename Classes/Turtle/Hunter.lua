@@ -6,11 +6,7 @@ ClassSpellsByLevel["Hunter"] = {
 	[1] = {
 		{id=75,name="Auto Shot",subText="",level=1,icon="Interface\\Icons\\Ability_Whirlwind"},
 		{id=2973,name="Raptor Strike",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_MeleeDamage"},
-		{id=2980,name="Claw",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_Druid_Rake"},
-		{id=17254,name="Bite",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_Racial_Cannibalize"},
-		{id=1494,name="Track Beasts",subText="",level=1,icon="Interface\\Icons\\Ability_Tracking"},
-		{id=24845,name="Lightning Breath",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Nature_Lightning"},
-		{id=25077,name="Cobra Reflexes",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Nature_GuardianWard"}
+		{id=1494,name="Track Beasts",subText="",level=1,icon="Interface\\Icons\\Ability_Tracking"}
 	},
 	[4] = {
 		{id=13163,name="Aspect of the Monkey",subText="",level=4,icon="Interface\\Icons\\Ability_Hunter_AspectOfTheMonkey"},
@@ -18,24 +14,17 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=45652,name="Aspect of the Snake",subText="",level=4,icon="Interface\\Icons\\ability_hunter_aspectoftheviper"},
 		{id=45651,name="Aspect of the Fox",subText="",level=4,icon="Interface\\Icons\\ability_hunter_aspectofthefox"}
 	},
-	[5] = {
-		{id=1747,name="Cower",subText="Rank 1",level=5,icon="Interface\\Icons\\Ability_Druid_Cower"}
-	},
 	[6] = {
 		{id=1130,name="Hunter's Mark",subText="Rank 1",level=6,icon="Interface\\Icons\\Ability_Hunter_SniperShot"},
 		{id=3044,name="Arcane Shot",subText="Rank 1",level=6,icon="Interface\\Icons\\Ability_ImpalingBolt"}
 	},
 	[8] = {
 		{id=5116,name="Concussive Shot",subText="",level=8,icon="Interface\\Icons\\Spell_Frost_Stun"},
-		{id=14260,name="Raptor Strike",subText="Rank 2",level=8,icon="Interface\\Icons\\Ability_MeleeDamage",requiredIds={2973}},
-		{id=2981,name="Claw",subText="Rank 2",level=8,icon="Interface\\Icons\\Ability_Druid_Rake",requiredIds={2980}},
-		{id=17262,name="Bite",subText="Rank 2",level=8,icon="Interface\\Icons\\Ability_Racial_Cannibalize",requiredIds={17254}},
-		{id=24641,name="Scorpid Poison",subText="Rank 1",level=8,icon="Interface\\Icons\\Ability_PoisonSting"}
+		{id=14260,name="Raptor Strike",subText="Rank 2",level=8,icon="Interface\\Icons\\Ability_MeleeDamage",requiredIds={2973}}
 	},
 	[10] = {
 		{id=1515,name="Tame Beast",subText="",level=10,icon="Interface\\Icons\\Ability_Hunter_BeastTaming"},
 		{id=883,name="Call Pet",subText="",level=10,icon="Interface\\Icons\\Ability_Hunter_BeastCall"},
-		{id=5149,name="Beast Training",subText="",level=10,icon="Interface\\Icons\\Ability_Hunter_BeastCall02"},
 		{id=982,name="Revive Pet",subText="",level=10,icon="Interface\\Icons\\Ability_Hunter_BeastSoothe"},
 		{id=13165,name="Aspect of the Hawk",subText="Rank 1",level=10,icon="Interface\\Icons\\Spell_Nature_RavenForm"},
 		{id=6991,name="Feed Pet",subText="",level=10,icon="Interface\\Icons\\Ability_Hunter_BeastTraining"},
@@ -49,23 +38,17 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=136,name="Mend Pet",subText="Rank 1",level=12,icon="Interface\\Icons\\Ability_Hunter_MendPet"},
 		{id=2974,name="Wing Clip",subText="Rank 1",level=12,icon="Interface\\Icons\\Ability_Rogue_Trip"},
 		{id=14281,name="Arcane Shot",subText="Rank 2",level=12,icon="Interface\\Icons\\Ability_ImpalingBolt",requiredIds={3044}},
-		{id=20736,name="Distracting Shot",subText="Rank 1",level=12,icon="Interface\\Icons\\Spell_Arcane_Blink"},
-		{id=25013,name="Lightning Breath",subText="Rank 2",level=12,icon="Interface\\Icons\\Spell_Nature_Lightning",requiredIds={24845}}
+		{id=20736,name="Distracting Shot",subText="Rank 1",level=12,icon="Interface\\Icons\\Spell_Arcane_Blink"}
 	},
 	[14] = {
 		{id=1513,name="Scare Beast",subText="Rank 1",level=14,icon="Interface\\Icons\\Ability_Druid_Cower"},
 		{id=6197,name="Eagle Eye",subText="",level=14,icon="Interface\\Icons\\Ability_Hunter_EagleEye"},
 		{id=1002,name="Eyes of the Beast",subText="",level=14,icon="Interface\\Icons\\Ability_EyeOfTheOwl"}
 	},
-	[15] = {
-		{id=1748,name="Cower",subText="Rank 2",level=15,icon="Interface\\Icons\\Ability_Druid_Cower",requiredIds={1747}}
-	},
 	[16] = {
 		{id=1495,name="Mongoose Bite",subText="Rank 1",level=16,icon="Interface\\Icons\\Ability_Hunter_SwiftStrike"},
 		{id=13795,name="Immolation Trap",subText="Rank 1",level=16,icon="Interface\\Icons\\Spell_Fire_FlameShock"},
 		{id=14261,name="Raptor Strike",subText="Rank 3",level=16,icon="Interface\\Icons\\Ability_MeleeDamage",requiredIds={14260}},
-		{id=2982,name="Claw",subText="Rank 3",level=16,icon="Interface\\Icons\\Ability_Druid_Rake",requiredIds={2981}},
-		{id=17263,name="Bite",subText="Rank 3",level=16,icon="Interface\\Icons\\Ability_Racial_Cannibalize",requiredIds={17262}},
 		{id=13797,name="Immolation Trap Effect",subText="Rank 1",level=16,icon="Interface\\Icons\\Spell_Fire_FlameShock"}
 	},
 	[18] = {
@@ -92,14 +75,7 @@ ClassSpellsByLevel["Hunter"] = {
 	[24] = {
 		{id=1462,name="Beast Lore",subText="",level=24,icon="Interface\\Icons\\Ability_Physical_Taunt"},
 		{id=14262,name="Raptor Strike",subText="Rank 4",level=24,icon="Interface\\Icons\\Ability_MeleeDamage",requiredIds={14261}},
-		{id=3667,name="Claw",subText="Rank 4",level=24,icon="Interface\\Icons\\Ability_Druid_Rake",requiredIds={2982}},
-		{id=17264,name="Bite",subText="Rank 4",level=24,icon="Interface\\Icons\\Ability_Racial_Cannibalize",requiredIds={17263}},
-		{id=19885,name="Track Hidden",subText="",level=24,icon="Interface\\Icons\\Ability_Stealth"},
-		{id=24584,name="Scorpid Poison",subText="Rank 2",level=24,icon="Interface\\Icons\\Ability_PoisonSting",requiredIds={24641}},
-		{id=25014,name="Lightning Breath",subText="Rank 3",level=24,icon="Interface\\Icons\\Spell_Nature_Lightning",requiredIds={25013}}
-	},
-	[25] = {
-		{id=1749,name="Cower",subText="Rank 3",level=25,icon="Interface\\Icons\\Ability_Druid_Cower",requiredIds={1748}}
+		{id=19885,name="Track Hidden",subText="",level=24,icon="Interface\\Icons\\Ability_Stealth"}
 	},
 	[26] = {
 		{id=3045,name="Rapid Fire",subText="",level=26,icon="Interface\\Icons\\Ability_Hunter_RunningShot"},
@@ -122,18 +98,12 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=14269,name="Mongoose Bite",subText="Rank 2",level=30,icon="Interface\\Icons\\Ability_Hunter_SwiftStrike",requiredIds={1495}},
 		{id=14288,name="Multi-Shot",subText="Rank 2",level=30,icon="Interface\\Icons\\Ability_UpgradeMoonGlaive",requiredIds={2643}},
 		{id=15629,name="Distracting Shot",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Arcane_Blink",requiredIds={14274}},
-		{id=23100,name="Dash",subText="Rank 1",level=30,icon="Interface\\Icons\\Ability_Druid_Dash"},
-		{id=23146,name="Dive",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Shadow_BurningSpirit"},
-		{id=24451,name="Prowl",subText="Rank 1",level=30,icon="Interface\\Icons\\Ability_Druid_SupriseAttack"},
-		{id=19306,name="Counterattack",subText="Rank 1",level=30,icon="Interface\\Icons\\Ability_Warrior_Challange"},
-		{id=26094,name="Thunderstomp",subText="Rank 1",level=30,icon="Interface\\Icons\\Ability_Hunter_Pet_Gorilla"}
+		{id=19306,name="Counterattack",subText="Rank 1",level=30,icon="Interface\\Icons\\Ability_Warrior_Challange"}
 	},
 	[32] = {
 		{id=1543,name="Flare",subText="",level=32,icon="Interface\\Icons\\Spell_Fire_Flare"},
 		{id=14263,name="Raptor Strike",subText="Rank 5",level=32,icon="Interface\\Icons\\Ability_MeleeDamage",requiredIds={14262}},
 		{id=14275,name="[Deprecated] Scorpid Sting",subText="Rank 2",level=32,icon="Interface\\Icons\\Ability_Hunter_CriticalShot"},
-		{id=2975,name="Claw",subText="Rank 5",level=32,icon="Interface\\Icons\\Ability_Druid_Rake",requiredIds={3667}},
-		{id=17265,name="Bite",subText="Rank 5",level=32,icon="Interface\\Icons\\Ability_Racial_Cannibalize",requiredIds={17264}},
 		{id=19878,name="Track Demons",subText="",level=32,icon="Interface\\Icons\\Spell_Shadow_SummonFelHunter"}
 	},
 	[34] = {
@@ -142,16 +112,12 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=13552,name="Serpent Sting",subText="Rank 5",level=34,icon="Interface\\Icons\\Ability_Hunter_Quickshot",requiredIds={13551}},
 		{id=13812,name="Explosive Trap Effect",subText="Rank 1",level=34,icon="Interface\\Icons\\Spell_Fire_SelfDestruct"}
 	},
-	[35] = {
-		{id=1750,name="Cower",subText="Rank 4",level=35,icon="Interface\\Icons\\Ability_Druid_Cower",requiredIds={1749}}
-	},
 	[36] = {
 		{id=3662,name="Mend Pet",subText="Rank 4",level=36,icon="Interface\\Icons\\Ability_Hunter_MendPet",requiredIds={3661}},
 		{id=3034,name="Viper Sting",subText="Rank 1",level=36,icon="Interface\\Icons\\Ability_Hunter_AimedShot"},
 		{id=14303,name="Immolation Trap",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Fire_FlameShock",requiredIds={14302}},
 		{id=14284,name="Arcane Shot",subText="Rank 5",level=36,icon="Interface\\Icons\\Ability_ImpalingBolt",requiredIds={14283}},
-		{id=14299,name="Immolation Trap Effect",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Fire_FlameShock",requiredIds={14298}},
-		{id=25015,name="Lightning Breath",subText="Rank 4",level=36,icon="Interface\\Icons\\Spell_Nature_Lightning",requiredIds={25014}}
+		{id=14299,name="Immolation Trap Effect",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Fire_FlameShock",requiredIds={14298}}
 	},
 	[38] = {
 		{id=14320,name="Aspect of the Hawk",subText="Rank 4",level=38,icon="Interface\\Icons\\Spell_Nature_RavenForm",requiredIds={14319}},
@@ -167,16 +133,9 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=14310,name="Freezing Trap",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Frost_ChainsOfIce",requiredIds={1499}},
 		{id=14324,name="Hunter's Mark",subText="Rank 3",level=40,icon="Interface\\Icons\\Ability_Hunter_SniperShot",requiredIds={14323}},
 		{id=15630,name="Distracting Shot",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Arcane_Blink",requiredIds={15629}},
-		{id=2976,name="Claw",subText="Rank 6",level=40,icon="Interface\\Icons\\Ability_Druid_Rake",requiredIds={2975}},
-		{id=17266,name="Bite",subText="Rank 6",level=40,icon="Interface\\Icons\\Ability_Racial_Cannibalize",requiredIds={17265}},
 		{id=19386,name="Wyvern Sting",subText="Rank 1",level=40,icon="Interface\\Icons\\INV_Spear_02"},
 		{id=19882,name="Track Giants",subText="",level=40,icon="Interface\\Icons\\Ability_Racial_Avatar"},
-		{id=23111,name="Dash",subText="Rank 2",level=40,icon="Interface\\Icons\\Ability_Druid_Dash",requiredIds={23100}},
-		{id=23149,name="Dive",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Shadow_BurningSpirit",requiredIds={23146}},
-		{id=24131,name="Wyvern Sting",subText="Rank 1",level=40,icon="Interface\\Icons\\INV_Spear_02",requiredIds={19386}},
-		{id=24454,name="Prowl",subText="Rank 2",level=40,icon="Interface\\Icons\\Ability_Druid_SupriseAttack",requiredIds={24451}},
-		{id=24588,name="Scorpid Poison",subText="Rank 3",level=40,icon="Interface\\Icons\\Ability_PoisonSting",requiredIds={24584}},
-		{id=26189,name="Thunderstomp",subText="Rank 2",level=40,icon="Interface\\Icons\\Ability_Hunter_Pet_Gorilla",requiredIds={26094}}
+		{id=24131,name="Wyvern Sting",subText="Rank 1",level=40,icon="Interface\\Icons\\INV_Spear_02",requiredIds={19386}}
 	},
 	[42] = {
 		{id=13553,name="Serpent Sting",subText="Rank 6",level=42,icon="Interface\\Icons\\Ability_Hunter_Quickshot",requiredIds={13552}},
@@ -191,9 +150,6 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=14285,name="Arcane Shot",subText="Rank 6",level=44,icon="Interface\\Icons\\Ability_ImpalingBolt",requiredIds={14284}},
 		{id=14314,name="Explosive Trap Effect",subText="Rank 2",level=44,icon="Interface\\Icons\\Spell_Fire_SelfDestruct",requiredIds={13812}}
 	},
-	[45] = {
-		{id=1751,name="Cower",subText="Rank 5",level=45,icon="Interface\\Icons\\Ability_Druid_Cower",requiredIds={1750}}
-	},
 	[46] = {
 		{id=14327,name="Scare Beast",subText="Rank 3",level=46,icon="Interface\\Icons\\Ability_Druid_Cower",requiredIds={14326}},
 		{id=14304,name="Immolation Trap",subText="Rank 4",level=46,icon="Interface\\Icons\\Spell_Fire_FlameShock",requiredIds={14303}},
@@ -205,9 +161,6 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=14321,name="Aspect of the Hawk",subText="Rank 5",level=48,icon="Interface\\Icons\\Spell_Nature_RavenForm",requiredIds={14320}},
 		{id=14265,name="Raptor Strike",subText="Rank 7",level=48,icon="Interface\\Icons\\Ability_MeleeDamage",requiredIds={14264}},
 		{id=14273,name="Disengage",subText="Rank 3",level=48,icon="Interface\\Icons\\Ability_Rogue_Feint",requiredIds={14272}},
-		{id=2977,name="Claw",subText="Rank 7",level=48,icon="Interface\\Icons\\Ability_Druid_Rake",requiredIds={2976}},
-		{id=17267,name="Bite",subText="Rank 7",level=48,icon="Interface\\Icons\\Ability_Racial_Cannibalize",requiredIds={17266}},
-		{id=25016,name="Lightning Breath",subText="Rank 5",level=48,icon="Interface\\Icons\\Spell_Nature_Lightning",requiredIds={25015}},
 		{id=51499,name="Aspect of the Wolf",subText="Rank 5",level=48,icon="Interface\\Icons\\Ability_Mount_WhiteDireWolf",requiredIds={51498}}
 	},
 	[50] = {
@@ -216,12 +169,8 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=14294,name="Volley",subText="Rank 2",level=50,icon="Interface\\Icons\\Ability_Marksmanship",requiredIds={1510}},
 		{id=15631,name="Distracting Shot",subText="Rank 5",level=50,icon="Interface\\Icons\\Spell_Arcane_Blink",requiredIds={15630}},
 		{id=19879,name="Track Dragonkin",subText="",level=50,icon="Interface\\Icons\\INV_Misc_Head_Dragon_01"},
-		{id=23112,name="Dash",subText="Rank 3",level=50,icon="Interface\\Icons\\Ability_Druid_Dash",requiredIds={23111}},
-		{id=23150,name="Dive",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Shadow_BurningSpirit",requiredIds={23149}},
 		{id=24132,name="Wyvern Sting",subText="Rank 2",level=50,icon="Interface\\Icons\\INV_Spear_02",requiredIds={24131}},
-		{id=24134,name="Wyvern Sting",subText="Rank 2",level=50,icon="Interface\\Icons\\INV_Spear_02",requiredIds={24132}},
-		{id=24455,name="Prowl",subText="Rank 3",level=50,icon="Interface\\Icons\\Ability_Druid_SupriseAttack",requiredIds={24454}},
-		{id=26190,name="Thunderstomp",subText="Rank 3",level=50,icon="Interface\\Icons\\Ability_Hunter_Pet_Gorilla",requiredIds={26189}}
+		{id=24134,name="Wyvern Sting",subText="Rank 2",level=50,icon="Interface\\Icons\\INV_Spear_02",requiredIds={24132}}
 	},
 	[52] = {
 		{id=13543,name="Mend Pet",subText="Rank 6",level=52,icon="Interface\\Icons\\Ability_Hunter_MendPet",requiredIds={13542}},
@@ -234,17 +183,11 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=14315,name="Explosive Trap Effect",subText="Rank 3",level=54,icon="Interface\\Icons\\Spell_Fire_SelfDestruct",requiredIds={14314}},
 		{id=20910,name="Counterattack",subText="Rank 3",level=54,icon="Interface\\Icons\\Ability_Warrior_Challange",requiredIds={20909}}
 	},
-	[55] = {
-		{id=16698,name="Cower",subText="Rank 6",level=55,icon="Interface\\Icons\\Ability_Druid_Cower",requiredIds={1751}}
-	},
 	[56] = {
 		{id=14266,name="Raptor Strike",subText="Rank 8",level=56,icon="Interface\\Icons\\Ability_MeleeDamage",requiredIds={14265}},
 		{id=14305,name="Immolation Trap",subText="Rank 5",level=56,icon="Interface\\Icons\\Spell_Fire_FlameShock",requiredIds={14304}},
 		{id=14280,name="Viper Sting",subText="Rank 3",level=56,icon="Interface\\Icons\\Ability_Hunter_AimedShot",requiredIds={14279}},
-		{id=3666,name="Claw",subText="Rank 8",level=56,icon="Interface\\Icons\\Ability_Druid_Rake",requiredIds={2977}},
-		{id=17268,name="Bite",subText="Rank 8",level=56,icon="Interface\\Icons\\Ability_Racial_Cannibalize",requiredIds={17267}},
 		{id=20190,name="Aspect of the Wild",subText="Rank 2",level=56,icon="Interface\\Icons\\Spell_Nature_ProtectionformNature",requiredIds={20043}},
-		{id=24589,name="Scorpid Poison",subText="Rank 4",level=56,icon="Interface\\Icons\\Ability_PoisonSting",requiredIds={24588}},
 		{id=14301,name="Immolation Trap Effect",subText="Rank 5",level=56,icon="Interface\\Icons\\Spell_Fire_FlameShock",requiredIds={14300}},
 		{id=45660,name="Viper Strike",subText="Rank 1",level=56,icon="Interface\\Icons\\Ability_Hunter_AimedShot"}
 	},
@@ -266,7 +209,6 @@ ClassSpellsByLevel["Hunter"] = {
 		{id=19801,name="Tranquilizing Shot",subText="",level=60,icon="Interface\\Icons\\Spell_Nature_Drowsy"},
 		{id=24133,name="Wyvern Sting",subText="Rank 3",level=60,icon="Interface\\Icons\\INV_Spear_02",requiredIds={24134}},
 		{id=24135,name="Wyvern Sting",subText="Rank 3",level=60,icon="Interface\\Icons\\INV_Spear_02",requiredIds={24133}},
-		{id=25017,name="Lightning Breath",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Nature_Lightning",requiredIds={25016}},
 		{id=25296,name="Aspect of the Hawk",subText="Rank 7",level=60,icon="Interface\\Icons\\Spell_Nature_RavenForm",requiredIds={14322}},
 		{id=25294,name="Multi-Shot",subText="Rank 5",level=60,icon="Interface\\Icons\\Ability_UpgradeMoonGlaive",requiredIds={14290}},
 		{id=25295,name="Serpent Sting",subText="Rank 9",level=60,icon="Interface\\Icons\\Ability_Hunter_Quickshot",requiredIds={13555}},
