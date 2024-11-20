@@ -24,8 +24,7 @@ ClassSpellsByLevel["Warrior"] = {
 	[1] = {
 		{id=78,name="Heroic Strike",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_Rogue_Ambush"},
 		{id=2457,name="Battle Stance",subText="",level=1,icon="Interface\\Icons\\Ability_Warrior_OffensiveStance"},
-		{id=6673,name="Battle Shout",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_Warrior_BattleShout"},
-		{id=20647,name="Execute",subText="",level=1,icon="Interface\\Icons\\INV_Sword_48"}
+		{id=6673,name="Battle Shout",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_Warrior_BattleShout"}
 	},
 	[4] = {
 		{id=772,name="Rend",subText="Rank 1",level=4,icon="Interface\\Icons\\Ability_Gouge"},
@@ -128,8 +127,6 @@ ClassSpellsByLevel["Warrior"] = {
 		{id=12294,name="Mortal Strike",subText="Rank 1",level=40,icon="Interface\\Icons\\Ability_Warrior_SavageBlow",requiredTalent={id=73,tabIndex=1}},
 		{id=20660,name="Execute",subText="Rank 3",level=40,icon="Interface\\Icons\\INV_Sword_48",requiredIds={20658}},
 		{id=23881,name="Bloodthirst",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Nature_BloodLust",requiredTalent={id=108,tabIndex=2}},
-		{id=23885,name="Bloodthirst",subText="",level=40,icon="Interface\\Icons\\Spell_Nature_BloodLust"},
-		{id=23880,name="Bloodthirst",subText="",level=40,icon="Interface\\Icons\\Spell_Nature_BloodLust"},
 		{id=51628,name="Counterattack",subText="Rank 3",level=40,icon="Interface\\Icons\\Ability_Warrior_Riposte",requiredIds={51627}}
 	},
 	[42] = {
@@ -152,9 +149,7 @@ ClassSpellsByLevel["Warrior"] = {
 		{id=11580,name="Thunder Clap",subText="Rank 5",level=48,icon="Interface\\Icons\\Spell_Nature_ThunderClap",requiredIds={8205}},
 		{id=20661,name="Execute",subText="Rank 4",level=48,icon="Interface\\Icons\\INV_Sword_48",requiredIds={20660}},
 		{id=21551,name="Mortal Strike",subText="Rank 2",level=48,icon="Interface\\Icons\\Ability_Warrior_SavageBlow",requiredIds={12294}},
-		{id=23892,name="Bloodthirst",subText="Rank 2",level=48,icon="Interface\\Icons\\Spell_Nature_BloodLust",requiredIds={23881}},
-		{id=23886,name="Bloodthirst",subText="",level=48,icon="Interface\\Icons\\Spell_Nature_BloodLust"},
-		{id=23889,name="Bloodthirst",subText="",level=48,icon="Interface\\Icons\\Spell_Nature_BloodLust"}
+		{id=23892,name="Bloodthirst",subText="Rank 2",level=48,icon="Interface\\Icons\\Spell_Nature_BloodLust",requiredIds={23881}}
 	},
 	[50] = {
 		{id=11573,name="Rend",subText="Rank 6",level=50,icon="Interface\\Icons\\Ability_Gouge",requiredIds={11572}},
@@ -173,7 +168,6 @@ ClassSpellsByLevel["Warrior"] = {
 		{id=11601,name="Revenge",subText="Rank 5",level=54,icon="Interface\\Icons\\Ability_Warrior_Revenge",requiredIds={11600}},
 		{id=21552,name="Mortal Strike",subText="Rank 3",level=54,icon="Interface\\Icons\\Ability_Warrior_SavageBlow",requiredIds={21551}},
 		{id=23893,name="Bloodthirst",subText="Rank 3",level=54,icon="Interface\\Icons\\Spell_Nature_BloodLust",requiredIds={23892}},
-		{id=23887,name="Bloodthirst",subText="",level=54,icon="Interface\\Icons\\Spell_Nature_BloodLust"},
 		{id=23925,name="Shield Slam",subText="Rank 4",level=54,icon="Interface\\Icons\\INV_Shield_05",requiredIds={23924}},
 		{id=45599,name="Decisive Strike",subText="",level=54,icon="Interface\\Icons\\Ability_Warrior_DecisiveStrike_New"}
 	},
@@ -192,10 +186,7 @@ ClassSpellsByLevel["Warrior"] = {
 		{id=11574,name="Rend",subText="Rank 7",level=60,icon="Interface\\Icons\\Ability_Gouge",requiredIds={11573}},
 		{id=20569,name="Cleave",subText="Rank 5",level=60,icon="Interface\\Icons\\Ability_Warrior_Cleave",requiredIds={11609}},
 		{id=21553,name="Mortal Strike",subText="Rank 4",level=60,icon="Interface\\Icons\\Ability_Warrior_SavageBlow",requiredIds={21552}},
-		{id=23890,name="Bloodthirst",subText="",level=60,icon="Interface\\Icons\\Spell_Nature_BloodLust"},
 		{id=23894,name="Bloodthirst",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Nature_BloodLust",requiredIds={23893}},
-		{id=23888,name="Bloodthirst",subText="",level=60,icon="Interface\\Icons\\Spell_Nature_BloodLust"},
-		{id=23891,name="Bloodthirst",subText="",level=60,icon="Interface\\Icons\\Spell_Nature_BloodLust"},
 		{id=25286,name="Heroic Strike",subText="Rank 9",level=60,icon="Interface\\Icons\\Ability_Rogue_Ambush",requiredIds={11567}},
 		{id=25288,name="Revenge",subText="Rank 6",level=60,icon="Interface\\Icons\\Ability_Warrior_Revenge",requiredIds={11601}},
 		{id=25289,name="Battle Shout",subText="Rank 7",level=60,icon="Interface\\Icons\\Ability_Warrior_BattleShout",requiredIds={11551}},

@@ -12,10 +12,6 @@ ClassSpellsByLevel["Paladin"] = {
 	[1] = {
 		{id=465,name="Devotion Aura",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_DevotionAura"},
 		{id=635,name="Holy Light",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_HolyBolt"},
-		{id=19982,name="Holy Light",subText="",level=1,icon="Interface\\Icons\\Spell_Holy_HolyBolt"},
-		{id=19981,name="Holy Light",subText="",level=1,icon="Interface\\Icons\\Spell_Holy_HolyBolt"},
-		{id=19980,name="Holy Light",subText="",level=1,icon="Interface\\Icons\\Spell_Holy_HolyBolt"},
-		{id=19968,name="Holy Light",subText="",level=1,icon="Interface\\Icons\\Spell_Holy_HolyBolt"},
 		{id=20154,name="Seal of Righteousness",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_ThunderBolt"},
 		{id=20187,name="Judgement of Righteousness",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_ThunderBolt"},
 		{id=21084,name="Seal of Righteousness",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_ThunderBolt",requiredIds={20154}},
@@ -72,7 +68,6 @@ ClassSpellsByLevel["Paladin"] = {
 		{id=879,name="Exorcism",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_Excorcism_02"},
 		{id=5502,name="Sense Undead",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_SenseUndead"},
 		{id=19750,name="Flash of Light",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_FlashHeal"},
-		{id=19993,name="Flash of Light",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_FlashHeal"},
 		{id=20218,name="Sanctity Aura",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_MindVision",requiredTalent={id=446,tabIndex=1}},
 		{id=20218,name="Sanctity Aura",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_MindVision",requiredTalent={id=446,tabIndex=1}},
 		{id=26573,name="Consecration",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_InnerFire"},

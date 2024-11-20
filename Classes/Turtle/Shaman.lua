@@ -106,7 +106,6 @@ ClassSpellsByLevel["Shaman"] = {
 		{id=556,name="Astral Recall",subText="",level=30,icon="Interface\\Icons\\Spell_Nature_AstralRecal"},
 		{id=6364,name="Searing Totem",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Fire_SearingTotem",requiredIds={6363}},
 		{id=20608,name="Reincarnation",subText="Passive",level=30,icon="Interface\\Icons\\Spell_Nature_Reincarnation"},
-		{id=21169,name="Reincarnation",subText="",level=30,icon="Interface\\Icons\\Spell_Nature_Reincarnation"},
 		{id=45504,name="Hex",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Shaman_Hex",races={"Troll"}}
 	},
 	[32] = {
