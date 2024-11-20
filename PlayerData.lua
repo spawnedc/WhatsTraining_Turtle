@@ -34,7 +34,9 @@ PlayerData = {
   ---@type table<integer>
   knownSpellIds = {},
   ---@type table<SpellCategories, Spell[]>
-  spellsByCategory = {}
+  spellsByCategory = {},
+  ---@type table<number, table<number, number>>
+  overridenSpells = {}
 }
 
 function PlayerData:SayHello()
@@ -81,6 +83,17 @@ function PlayerData:SetSpellsByLevel(spellsByLevel)
   end
 end
 
+--[[
+    overridenSpells is just a set of tables, where each table is a list of spell ids that
+    totally overwrite a previous rank of that ability ordered by rank.
+    Most warrior and rogue abilities are like this, as they cost the same amount
+    of resources but just last longer or do more damage.
+]]
+---@param overridenSpells table<number, table<number, number>>
+function PlayerData:SetOverriddenSpells(overridenSpells)
+  self.overridenSpells = overridenSpells
+end
+
 function PlayerData:GetKnownSpells()
   -- Reset the known spells every time we call this function
   self.knownSpellIds = {}
@@ -97,6 +110,13 @@ function PlayerData:GetKnownSpells()
     if (spell) then
       -- Utils.log(name .. " (" .. rank .. ") - [" .. spell.id .. "]")
       tinsert(self.knownSpellIds, spell.id)
+
+      local overridenSpellIds = self.overridenSpells[spell.id]
+      if (overridenSpellIds) then
+        for _, spellId in ipairs(overridenSpellIds) do
+          tinsert(self.knownSpellIds, spellId)
+        end
+      end
     end
 
     i = i + 1

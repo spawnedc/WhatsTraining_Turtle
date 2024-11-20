@@ -1,6 +1,6 @@
 setfenv(1, WhatsTraining)
 OverridenSpells["Hunter"] = {
-	{1513,1528}
+	[1528] = {1513}
 }
 ClassSpellsByLevel["Hunter"] = {
 	[1] = {

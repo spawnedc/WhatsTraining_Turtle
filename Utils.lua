@@ -90,11 +90,11 @@ end
 
 ---Returns the spell key for a given name and rank
 ---@param name string
----@param rank string
+---@param rank string|nil
 ---@return string
 function Utils.getSpellWithRankKey(name, rank)
   local spellNameKey = name
-  if (rank ~= "") then
+  if (rank ~= "" and rank ~= nil) then
     spellNameKey = spellNameKey .. "-" .. rank
   end
 
