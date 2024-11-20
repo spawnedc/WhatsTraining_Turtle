@@ -15,6 +15,8 @@ local MAX_VISIBLE_ROWS = 22
 function WhatsTrainingUI:Initialize()
   self:InitDisplay()
   self.rows = {}
+  self.tooltip = CreateFrame("GameTooltip", "WhatsTrainingTooltip", UIParent,
+    "GameTooltipTemplate")
 end
 
 function WhatsTrainingUI:Update()
@@ -47,8 +49,12 @@ function WhatsTrainingUI:hideTabTooltip()
 end
 
 function WhatsTrainingUI:HideFrame()
-  self.tab:SetChecked(false)
-  self.frame:Hide()
+  if (self.tab) then
+    self.tab:SetChecked(false)
+  end
+  if (self.frame) then
+    self.frame:Hide()
+  end
 end
 
 function WhatsTrainingUI:ShowFrame()
@@ -159,14 +165,17 @@ function WhatsTrainingUI:SetItems(spells)
       for spellIndex, categorySpell in ipairs(categorySpells) do
         local rowFrameName = "$parentRow-" .. categoryIndex .. "-" .. spellIndex
         local row = CreateFrame("Button", rowFrameName, self.frame)
+        row.spell = categorySpell
         row:SetHeight(ROW_HEIGHT)
         row:EnableMouse(true)
         row:RegisterForClicks("LeftButtonUp", "RightButtonUp")
-        -- row:SetScript("OnEnter", function(self)
-        --   tooltip:SetOwner(self, "ANCHOR_RIGHT")
-        --   setTooltip(self.currentSpell)
-        -- end)
-        -- row:SetScript("OnLeave", function() tooltip:Hide() end)
+        row:SetScript("OnEnter", function()
+          self.tooltip:SetOwner(row, "ANCHOR_RIGHT")
+          self.tooltip:AddDoubleLine(row.spell.name, row.spell.id, 1, 1, 1, 1, 1, 1)
+          self.tooltip:AddLine(row.spell.subText)
+          self.tooltip:Show()
+        end)
+        row:SetScript("OnLeave", function() self.tooltip:Hide() end)
 
         local highlight = row:CreateTexture("$parentHighlight", "HIGHLIGHT")
         highlight:SetAllPoints()
