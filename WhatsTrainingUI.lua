@@ -103,6 +103,8 @@ function WhatsTrainingUI:InitDisplay()
   self.frame:SetPoint("TOPLEFT", SpellBookFrame, "TOPLEFT", 0, 0)
   self.frame:SetPoint("BOTTOMRIGHT", SpellBookFrame, "BOTTOMRIGHT", 0, 0)
   self.frame:SetFrameStrata("HIGH")
+  -- prevents mouse hover leaking
+  self.frame:EnableMouse(true)
 
   self.tab = WhatsTrainingUI:SetupTab()
 
