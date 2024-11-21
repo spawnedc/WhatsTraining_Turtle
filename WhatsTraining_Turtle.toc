@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: What's Training? Turtle
-## Version: 1.0.2
+## Version: 1.0.3
 ## Author: Sveng, Turtle Port: spawnedc
 ## Notes: Shows you what spells are available at your class trainer
 
