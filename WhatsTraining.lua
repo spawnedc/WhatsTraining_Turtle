@@ -10,7 +10,11 @@ function WhatsTraining:Initialise()
   PlayerData:SetRace(UnitRace("player"))
   PlayerData:SetLevel(UnitLevel("player"))
   PlayerData:SetSpellsByLevel(ClassSpellsByLevel[PlayerData.class])
-  PlayerData:SetOverriddenSpells(OverridenSpells[PlayerData.class])
+
+  local overridenSpells = OverridenSpells[PlayerData.class]
+  if (overridenSpells) then
+    PlayerData:SetOverriddenSpells(overridenSpells)
+  end
 
   PlayerData:GetKnownSpells()
   PlayerData:GetAvailableSpells()
