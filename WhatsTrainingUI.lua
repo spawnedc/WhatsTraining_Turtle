@@ -137,6 +137,7 @@ end
 ---@param spells table<SpellCategories, Spell[]>
 function WhatsTrainingUI:SetItems(spells)
   local i = 1
+  local spellSchool = nil
   for categoryIndex, spellCategory in ipairs(SpellCategoryHeaders) do
     local categorySpells = spells[spellCategory.key]
     local categoryHasSpells = categorySpells ~= nil and Utils.tableLength(categorySpells) > 0
@@ -165,6 +166,27 @@ function WhatsTrainingUI:SetItems(spells)
       i = i + 1
 
       for spellIndex, categorySpell in ipairs(categorySpells) do
+        if spellCategory.showSpellSchoolHeader then
+          if spellSchool ~= categorySpell.school then
+            local schoolName = "$schoolRow-" .. spellCategory.name
+            local school = CreateFrame("Button", schoolName, self.frame)
+            school:SetHeight(ROW_HEIGHT)
+
+            local schoolLabel = school:CreateFontString(schoolName .. "-school", "OVERLAY", "GameFontWhite")
+            schoolLabel:SetAllPoints()
+            schoolLabel:SetJustifyH("Left")
+            schoolLabel:SetText(categorySpell.school)
+
+            school:SetPoint("RIGHT", self.scrollBar)
+            school:SetPoint("TOPLEFT", self.rows[i - 1], "BOTTOMLEFT", 0, -2)
+
+            -- add school to the list
+            rawset(self.rows, i, school)
+            spellSchool = categorySpell.school
+            i = i + 1
+          end
+        end
+
         local rowFrameName = "$parentRow-" .. categoryIndex .. "-" .. spellIndex
         local row = CreateFrame("Button", rowFrameName, self.frame)
         row.spell = categorySpell
@@ -174,7 +196,7 @@ function WhatsTrainingUI:SetItems(spells)
         row:SetScript("OnEnter", function()
           self.tooltip:SetOwner(row, "ANCHOR_RIGHT")
           self.tooltip:AddDoubleLine(row.spell.name, row.spell.id, 1, 1, 1, 1, 1, 1)
-          self.tooltip:AddLine(row.spell.subText)
+          self.tooltip:AddDoubleLine(row.spell.school, row.spell.subText)
           self.tooltip:Show()
         end)
         row:SetScript("OnLeave", function() self.tooltip:Hide() end)
@@ -189,15 +211,19 @@ function WhatsTrainingUI:SetItems(spells)
         spell:SetPoint("BOTTOM", row, "BOTTOM")
 
         local spellIcon = spell:CreateTexture(nil, "OVERLAY")
-        spellIcon:SetPoint("TOPLEFT", spell)
-        spellIcon:SetPoint("BOTTOMLEFT", spell)
+        if spellCategory.showSpellSchoolHeader then
+          spellIcon:SetPoint("TOPLEFT", spell, "TOPLEFT", ROW_HEIGHT, 0)
+        else
+          spellIcon:SetPoint("TOPLEFT", spell, "TOPLEFT")
+        end
         spellIcon:SetTexture(categorySpell.icon)
 
         local iconWidth = ROW_HEIGHT
         spellIcon:SetWidth(iconWidth)
+        spellIcon:SetHeight(iconWidth)
 
         local spellLabel = spell:CreateFontString("$parentLabel", "OVERLAY", "GameFontNormal")
-        spellLabel:SetPoint("TOPLEFT", spell, "TOPLEFT", iconWidth + 4, 0)
+        spellLabel:SetPoint("TOPLEFT", spellIcon, "TOPLEFT", iconWidth + 4, 0)
         spellLabel:SetPoint("BOTTOM", spell)
         spellLabel:SetJustifyV("Middle")
         spellLabel:SetJustifyH("Left")

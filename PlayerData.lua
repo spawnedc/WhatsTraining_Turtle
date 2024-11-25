@@ -12,6 +12,7 @@ setfenv(1, WhatsTraining)
 ---@field icon string Icon of the spell
 ---@field requiredIds? integer[] List of required spell ids for this spell
 ---@field requiredTalent? RequiredTalent The required talent for this spell
+---@field school string The school of the spell
 ---@field race? string The single race that this spell is allowed to be used
 ---@field races? integer[] The list of races that this spell is allowed to be used
 ---@field faction? string The faction requirement for the spell
@@ -178,10 +179,18 @@ function PlayerData:GetAvailableSpells()
 
   table.sort(missingTalentRequirement, function(a, b) return a.level < b.level end)
   table.sort(missingRequirements, function(a, b) return a.level < b.level end)
-  table.sort(availableSpells, function(a, b) return a.level < b.level end)
   table.sort(comingSoon, function(a, b) return a.level < b.level end)
   table.sort(notAvailable, function(a, b) return a.level < b.level end)
   table.sort(knownSpells, function(a, b) return a.level < b.level end)
+  table.sort(availableSpells, function(a, b)
+    if a.school == b.school and a.level == b.level then
+      return a.name < b.name
+    elseif a.school == b.school then
+      return a.level < b.level   -- Secondary sort by level
+    else
+      return a.school < b.school -- Primary sort by school
+    end
+  end)
 
   self.spellsByCategory[SpellCategories.MISSING_TALENT] = missingTalentRequirement
   self.spellsByCategory[SpellCategories.MISSING_REQS] = missingRequirements

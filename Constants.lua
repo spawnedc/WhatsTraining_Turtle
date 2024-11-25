@@ -24,14 +24,15 @@ SpellCategories = {
 ---@field key SpellCategories
 ---@field color? string
 ---@field hideLevel? boolean
----@field nameSort? boolean
+---@field showSpellSchoolHeader? boolean
 
 ---@type SpellCategoryHeader[]
 SpellCategoryHeaders = { {
   name = "Available now",
   color = GREEN_FONT_COLOR_CODE,
   hideLevel = true,
-  key = SpellCategories.AVAILABLE
+  key = SpellCategories.AVAILABLE,
+  showSpellSchoolHeader = true
 }, {
   name = "Available but missing requirements",
   color = ORANGE_FONT_COLOR_CODE,
@@ -53,23 +54,19 @@ SpellCategoryHeaders = { {
   color = MISSINGTALENT_FONT_COLOR_CODE,
   key = SpellCategories.MISSING_TALENT,
   hideLevel = true,
-  nameSort = true
 }, {
   name = "Ignored",
   color = LIGHTYELLOW_FONT_COLOR_CODE,
   -- costFormat = WT.L.TOTALSAVINGS_FORMAT,
   key = SpellCategories.IGNORED,
-  nameSort = true
 }, {
   name = "Known",
   color = GRAY_FONT_COLOR_CODE,
   hideLevel = true,
   key = SpellCategories.KNOWN,
-  nameSort = true
 }, {
   name = "Known (Pet)",
   color = GRAY_FONT_COLOR_CODE,
   hideLevel = true,
   key = SpellCategories.KNOWN_PET,
-  nameSort = true
 } }
