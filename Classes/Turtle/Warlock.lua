@@ -239,7 +239,6 @@ ClassSpellsByLevel["Warlock"] = {
 		{id=51687,name="Drain Soul",subText="Rank 5",level=60,icon="Interface\\Icons\\Spell_Shadow_Haunting",school="Affliction",requiredIds={11675}},
 		{id=11695,name="Health Funnel",subText="Rank 7",level=60,icon="Interface\\Icons\\Spell_Shadow_LifeDrain",school="Demonology",requiredIds={11694}},
 		{id=11668,name="Immolate",subText="Rank 7",level=60,icon="Interface\\Icons\\Spell_Fire_Immolation",school="Destruction",requiredIds={11667}},
-		{id=11668,name="Immolate",subText="Rank 7",level=60,icon="Interface\\Icons\\Spell_Fire_Immolation",school="Destruction",requiredIds={11667}},
 		{id=25309,name="Immolate",subText="Rank 8",level=60,icon="Interface\\Icons\\Spell_Fire_Immolation",school="Destruction",requiredIds={11668}},
 		{id=18540,name="Ritual of Doom",subText="",level=60,icon="Interface\\Icons\\Spell_Shadow_AntiMagicShell",school="Demonology"},
 		{id=18541,name="Ritual of Doom Effect",subText="",level=60,icon="Interface\\Icons\\Spell_Arcane_PortalDarnassus",school="Demonology"},

@@ -28,11 +28,9 @@ OverridenSpells["Paladin"] = {
 ClassSpellsByLevel["Paladin"] = {
 	[1] = {
 		{id=465,name="Devotion Aura",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_DevotionAura",school="Protection"},
-		{id=25997,name="Eye for an Eye",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_EyeforanEye",school="Retribution"},
 		{id=635,name="Holy Light",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_HolyBolt",school="Holy"},
 		{id=20187,name="Judgement of Righteousness",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_ThunderBolt",school="Holy"},
-		{id=20154,name="Seal of Righteousness",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_ThunderBolt",school="Holy"},
-		{id=21084,name="Seal of Righteousness",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_ThunderBolt",school="Holy",requiredIds={20154}}
+		{id=20154,name="Seal of Righteousness",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_ThunderBolt",school="Holy"}
 	},
 	[4] = {
 		{id=19740,name="Blessing of Might",subText="Rank 1",level=4,icon="Interface\\Icons\\Spell_Holy_FistOfJustice",school="Retribution"},
@@ -55,7 +53,7 @@ ClassSpellsByLevel["Paladin"] = {
 		{id=51302,name="Hand of Reckoning",subText="",level=10,icon="Interface\\Icons\\Spell_Holy_Redemption",school="Protection"},
 		{id=20280,name="Judgement of Righteousness",subText="Rank 2",level=10,icon="Interface\\Icons\\Ability_ThunderBolt",school="Holy",requiredIds={20187}},
 		{id=633,name="Lay on Hands",subText="Rank 1",level=10,icon="Interface\\Icons\\Spell_Holy_LayOnHands",school="Holy"},
-		{id=20287,name="Seal of Righteousness",subText="Rank 2",level=10,icon="Interface\\Icons\\Ability_ThunderBolt",school="Holy",requiredIds={21084}}
+		{id=20287,name="Seal of Righteousness",subText="Rank 2",level=10,icon="Interface\\Icons\\Ability_ThunderBolt",school="Holy",requiredIds={20154}}
 	},
 	[12] = {
 		{id=19834,name="Blessing of Might",subText="Rank 2",level=12,icon="Interface\\Icons\\Spell_Holy_FistOfJustice",school="Retribution",requiredIds={19740}},
@@ -91,7 +89,6 @@ ClassSpellsByLevel["Paladin"] = {
 		{id=20425,name="Judgement of Command",subText="Rank 1",level=20,icon="Interface\\Icons\\Ability_Warrior_InnerRage",school="Retribution"},
 		{id=20467,name="Judgement of Command",subText="Rank 1",level=20,icon="Interface\\Icons\\Ability_Warrior_InnerRage",school="Retribution",requiredIds={20425}},
 		{id=20218,name="Sanctity Aura",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_MindVision",school="Holy",requiredTalent={id=446,tabIndex=1}},
-		{id=20218,name="Sanctity Aura",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_MindVision",school="Holy",requiredTalent={id=446,tabIndex=1}},
 		{id=5502,name="Sense Undead",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_SenseUndead",school="Holy"}
 	},
 	[22] = {
@@ -126,7 +123,6 @@ ClassSpellsByLevel["Paladin"] = {
 		{id=19876,name="Shadow Resistance Aura",subText="Rank 1",level=28,icon="Interface\\Icons\\Spell_Shadow_SealOfKings",school="Protection"}
 	},
 	[30] = {
-		{id=20116,name="Consecration",subText="Rank 2",level=30,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={26573}},
 		{id=20116,name="Consecration",subText="Rank 2",level=30,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={26573}},
 		{id=10291,name="Devotion Aura",subText="Rank 4",level=30,icon="Interface\\Icons\\Spell_Holy_DevotionAura",school="Protection",requiredIds={643}},
 		{id=19752,name="Divine Intervention",subText="",level=30,icon="Interface\\Icons\\Spell_Nature_TimeStop",school="Protection"},
@@ -173,7 +169,6 @@ ClassSpellsByLevel["Paladin"] = {
 		{id=19977,name="Blessing of Light",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Holy_PrayerOfHealing02",school="Holy"},
 		{id=20912,name="Blessing of Sanctuary",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Nature_LightningShield",school="Protection",requiredIds={20911}},
 		{id=51346,name="Bulwark of the Righteous",subText="Rank 1",level=40,icon="Interface\\Icons\\Ability_Warrior_VictoryRush",school="Protection",requiredTalent={id=472,tabIndex=2}},
-		{id=20922,name="Consecration",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20116}},
 		{id=20922,name="Consecration",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20116}},
 		{id=45619,name="Conviction",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Holy_RetributionAura",school="Retribution"},
 		{id=1032,name="Devotion Aura",subText="Rank 5",level=40,icon="Interface\\Icons\\Spell_Holy_DevotionAura",school="Protection",requiredIds={10291}},
@@ -222,7 +217,6 @@ ClassSpellsByLevel["Paladin"] = {
 		{id=19978,name="Blessing of Light",subText="Rank 2",level=50,icon="Interface\\Icons\\Spell_Holy_PrayerOfHealing02",school="Holy",requiredIds={19977}},
 		{id=20913,name="Blessing of Sanctuary",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Nature_LightningShield",school="Protection",requiredIds={20912}},
 		{id=51565,name="Bulwark of the Righteous",subText="Rank 2",level=50,icon="Interface\\Icons\\Ability_Warrior_VictoryRush",school="Protection",requiredIds={51346}},
-		{id=20923,name="Consecration",subText="Rank 4",level=50,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20922}},
 		{id=20923,name="Consecration",subText="Rank 4",level=50,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20922}},
 		{id=10292,name="Devotion Aura",subText="Rank 6",level=50,icon="Interface\\Icons\\Spell_Holy_DevotionAura",school="Protection",requiredIds={1032}},
 		{id=1020,name="Divine Shield",subText="Rank 2",level=50,icon="Interface\\Icons\\Spell_Holy_DivineIntervention",school="Protection",requiredIds={642}},
@@ -275,7 +269,6 @@ ClassSpellsByLevel["Paladin"] = {
 		{id=20914,name="Blessing of Sanctuary",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Nature_LightningShield",school="Protection",requiredIds={20913}},
 		{id=25290,name="Blessing of Wisdom",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Holy_SealOfWisdom",school="Holy",requiredIds={19854}},
 		{id=51566,name="Bulwark of the Righteous",subText="Rank 3",level=60,icon="Interface\\Icons\\Ability_Warrior_VictoryRush",school="Protection",requiredIds={51565}},
-		{id=20924,name="Consecration",subText="Rank 5",level=60,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20923}},
 		{id=20924,name="Consecration",subText="Rank 5",level=60,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20923}},
 		{id=45620,name="Conviction",subText="Rank 2",level=60,icon="Interface\\Icons\\Spell_Holy_RetributionAura",school="Retribution",requiredIds={45619}},
 		{id=10293,name="Devotion Aura",subText="Rank 7",level=60,icon="Interface\\Icons\\Spell_Holy_DevotionAura",school="Protection",requiredIds={10292}},

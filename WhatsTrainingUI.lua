@@ -20,7 +20,7 @@ function WhatsTrainingUI:Initialize()
 end
 
 function WhatsTrainingUI:Update()
-  local totalItems = Utils.tableLength(self.rows)
+  local totalItems = Utils.tableLength(self.rows) + 1
   FauxScrollFrame_Update(self.scrollBar, totalItems, MAX_VISIBLE_ROWS, ROW_HEIGHT);
 
   local offset = FauxScrollFrame_GetOffset(self.scrollBar)
