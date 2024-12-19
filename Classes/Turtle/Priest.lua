@@ -27,7 +27,7 @@ ClassSpellsByLevel["Priest"] = {
 	},
 	[10] = {
 		{id=13908,name="Desperate Prayer",subText="Rank 1",level=10,icon="Interface\\Icons\\Spell_Holy_Restoration",races={"Dwarf","Human"},school="Holy"},
-		{id=46042,name="Grace of the Sunwell",subText="",level=10,icon="Interface\\Icons\\Spell_Holy_MindVision",school="Holy"},
+		{id=46042,name="Grace of the Sunwell",subText="",level=10,icon="Interface\\Icons\\Spell_Holy_MindVision",races={"High Elf"},school="Holy"},
 		{id=9035,name="Hex of Weakness",subText="Rank 1",level=10,icon="Interface\\Icons\\Spell_Shadow_FingerOfDeath",races={"Troll"},school="Shadow Magic"},
 		{id=2053,name="Lesser Heal",subText="Rank 3",level=10,icon="Interface\\Icons\\Spell_Holy_LesserHeal",school="Holy",requiredIds={2052}},
 		{id=8092,name="Mind Blast",subText="Rank 1",level=10,icon="Interface\\Icons\\Spell_Shadow_UnholyFrenzy",school="Shadow Magic"},
@@ -76,7 +76,7 @@ ClassSpellsByLevel["Priest"] = {
 		{id=52638,name="Searing Shot",subText="Rank 1",level=20,icon="Interface\\Icons\\Ability_SearingArrow",races={"Night Elf"},school="Discipline"},
 		{id=9484,name="Shackle Undead",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Nature_Slow",school="Discipline"},
 		{id=18137,name="Shadowguard",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"Troll"},school="Shadow Magic"},
-		{id=46043,name="Sun's Embrace",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_HolyProtection",school="Holy"},
+		{id=46043,name="Sun's Embrace",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_HolyProtection",races={"High Elf"},school="Holy"},
 		{id=19261,name="Touch of Weakness",subText="Rank 2",level=20,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"Undead"},school="Shadow Magic",requiredIds={2652}}
 	},
 	[22] = {
@@ -118,7 +118,6 @@ ClassSpellsByLevel["Priest"] = {
 		{id=15263,name="Holy Fire",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Holy_SearingLight",school="Holy",requiredIds={15262}},
 		{id=602,name="Inner Fire",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Discipline",requiredIds={7128}},
 		{id=724,name="Lightwell",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy"},
-		{id=7001,name="Lightwell Renew",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy"},
 		{id=605,name="Mind Control",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Shadow_ShadowWordDominate",school="Shadow Magic"},
 		{id=45555,name="Pain Spike",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic"},
 		{id=6065,name="Power Word: Shield",subText="Rank 5",level=30,icon="Interface\\Icons\\Spell_Holy_PowerWordShield",school="Discipline",requiredIds={3747}},
@@ -146,7 +145,7 @@ ClassSpellsByLevel["Priest"] = {
 		{id=19302,name="Starshards",subText="Rank 4",level=34,icon="Interface\\Icons\\Spell_Arcane_StarFire",races={"Night Elf"},school="Discipline",requiredIds={19299}}
 	},
 	[35] = {
-		{id=46044,name="Sun's Embrace",subText="Rank 2",level=35,icon="Interface\\Icons\\Spell_Holy_HolyProtection",school="Holy",requiredIds={46043}}
+		{id=46044,name="Sun's Embrace",subText="Rank 2",level=35,icon="Interface\\Icons\\Spell_Holy_HolyProtection",races={"High Elf"},school="Holy",requiredIds={46043}}
 	},
 	[36] = {
 		{id=19277,name="Devouring Plague",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Shadow_BlackPlague",races={"Undead"},school="Shadow Magic",requiredIds={19276}},
@@ -175,7 +174,6 @@ ClassSpellsByLevel["Priest"] = {
 		{id=19283,name="Hex of Weakness",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Shadow_FingerOfDeath",races={"Troll"},school="Shadow Magic",requiredIds={19282}},
 		{id=1006,name="Inner Fire",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Discipline",requiredIds={602}},
 		{id=27870,name="Lightwell",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy",requiredIds={724}},
-		{id=27873,name="Lightwell Renew",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy",requiredIds={7001}},
 		{id=10874,name="Mana Burn",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Shadow_ManaBurn",school="Shadow Magic",requiredIds={8131}},
 		{id=8106,name="Mind Blast",subText="Rank 6",level=40,icon="Interface\\Icons\\Spell_Shadow_UnholyFrenzy",school="Shadow Magic",requiredIds={8105}},
 		{id=57701,name="Pain Spike",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic",requiredIds={45555}},
@@ -234,13 +232,12 @@ ClassSpellsByLevel["Priest"] = {
 		{id=19284,name="Hex of Weakness",subText="Rank 5",level=50,icon="Interface\\Icons\\Spell_Shadow_FingerOfDeath",races={"Troll"},school="Shadow Magic",requiredIds={19283}},
 		{id=10951,name="Inner Fire",subText="Rank 5",level=50,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Discipline",requiredIds={1006}},
 		{id=27871,name="Lightwell",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy",requiredIds={27870}},
-		{id=27874,name="Lightwell Renew",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy",requiredIds={27873}},
 		{id=57704,name="Pain Spike",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic",requiredIds={57701}},
 		{id=10960,name="Prayer of Healing",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Holy_PrayerOfHealing02",school="Holy",requiredIds={996}},
 		{id=10928,name="Renew",subText="Rank 8",level=50,icon="Interface\\Icons\\Spell_Holy_Renew",school="Holy",requiredIds={10927}},
 		{id=10893,name="Shadow Word: Pain",subText="Rank 7",level=50,icon="Interface\\Icons\\Spell_Shadow_ShadowWordPain",school="Shadow Magic",requiredIds={10892}},
 		{id=19304,name="Starshards",subText="Rank 6",level=50,icon="Interface\\Icons\\Spell_Arcane_StarFire",races={"Night Elf"},school="Discipline",requiredIds={19303}},
-		{id=46045,name="Sun's Embrace",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Holy_HolyProtection",school="Holy",requiredIds={46044}},
+		{id=46045,name="Sun's Embrace",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Holy_HolyProtection",races={"High Elf"},school="Holy",requiredIds={46044}},
 		{id=19265,name="Touch of Weakness",subText="Rank 5",level=50,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"Undead"},school="Shadow Magic",requiredIds={19264}}
 	},
 	[52] = {
@@ -293,7 +290,6 @@ ClassSpellsByLevel["Priest"] = {
 		{id=27801,name="Holy Nova",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Holy_HolyNova",school="Holy",requiredIds={27800}},
 		{id=10952,name="Inner Fire",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Discipline",requiredIds={10951}},
 		{id=51458,name="Lightwell",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy",requiredIds={27871}},
-		{id=51459,name="Lightwell Renew",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy",requiredIds={27874}},
 		{id=18807,name="Mind Flay",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Shadow_SiphonMana",school="Shadow Magic",requiredIds={17314}},
 		{id=57707,name="Pain Spike",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic",requiredIds={57704}},
 		{id=10938,name="Power Word: Fortitude",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Holy_WordFortitude",school="Discipline",requiredIds={10937}},
@@ -307,7 +303,7 @@ ClassSpellsByLevel["Priest"] = {
 		{id=10955,name="Shackle Undead",subText="Rank 3",level=60,icon="Interface\\Icons\\Spell_Nature_Slow",school="Discipline",requiredIds={9485}},
 		{id=19312,name="Shadowguard",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"Troll"},school="Shadow Magic",requiredIds={19311}},
 		{id=45968,name="Smite",subText="Rank 9",level=60,icon="Interface\\Icons\\Spell_Holy_HolySmite",school="Holy",requiredIds={10934}},
-		{id=46046,name="Sun's Embrace",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Holy_HolyProtection",school="Holy",requiredIds={46045}},
+		{id=46046,name="Sun's Embrace",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Holy_HolyProtection",races={"High Elf"},school="Holy",requiredIds={46045}},
 		{id=19266,name="Touch of Weakness",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"Undead"},school="Shadow Magic",requiredIds={19265}}
 	}
 }
