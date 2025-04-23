@@ -4,10 +4,6 @@
 ## Author: Sveng, Turtle Port by spawnedc
 ## Notes: Shows you what spells are available at your class trainer
 
-Lib\LibStub\LibStub.lua
-Lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
-Lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
-
 Environment.lua
 Constants.lua
 Utils.lua
