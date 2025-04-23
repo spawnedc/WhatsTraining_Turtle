@@ -1,18 +1,35 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
   "runtime.version": "Lua 5.1",
+  "diagnostics.globals": [
+    "arg",
+    "arg1",
+    "arg2",
+    "arg3",
+    "arg4",
+    "arg5",
+    "arg6",
+    "arg7",
+    "arg8",
+    "arg9",
+    "event",
+    "this"
+  ],
   "workspace.library": [
     "defs/wow-api-type-definitions",
-    "defs/Vanilla-WoW-Lua-Definitions/src",
-    "defs/GlobalDefs.lua",
-    "defs/LibStub.d.lua"
+    "defs/TurtleDefs.d.lua"
   ],
+  "type.inferParamType": true,
   "diagnostics.libraryFiles": "Disable",
   "diagnostics.disable": [
     "need-check-nil"
   ],
-  "diagnostics.globals": [
-    "tinsert",
-    "event"
+  "diagnostics.ignoredFiles": "Disable",
+  "workspace.ignoreDir": [
+    "defs"
+  ],
+  "diagnostics.disableScheme": [
+    "git",
+    "defs/**/*.d.lua"
   ]
 }

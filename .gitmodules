@@ -1,6 +1,3 @@
-[submodule "defs/Vanilla-WoW-Lua-Definitions"]
-	path = defs/Vanilla-WoW-Lua-Definitions
-	url = https://github.com/refaim/Vanilla-WoW-Lua-Definitions.git
 [submodule "defs/wow-api-type-definitions"]
 	path = defs/wow-api-type-definitions
 	url = https://github.com/SabineWren/wow-api-type-definitions.git
