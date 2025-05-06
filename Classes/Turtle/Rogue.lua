@@ -60,7 +60,6 @@ OverridenSpells["Rogue"] = {
 	[11300] = {2098,6760,6761,6762,8623,8624,11299},
 	[11303] = {1966,6768,8637},
 	[11305] = {2983,8696},
-	[17348] = {17347},
 	[25300] = {53,2589,2590,2591,8721,11279,11280,11281},
 	[25302] = {1966,6768,8637,11303},
 	[31016] = {2098,6760,6761,6762,8623,8624,11299,11300}
@@ -190,7 +189,6 @@ ClassSpellsByLevel["Rogue"] = {
 		{id=11285,name="Gouge",subText="Rank 4",level=46,icon="Interface\\Icons\\Ability_Gouge",school="Combat",requiredIds={8629}},
 		{id=11293,name="Sinister Strike",subText="Rank 7",level=46,icon="Interface\\Icons\\Spell_Shadow_RitualOfSacrifice",school="Combat",requiredIds={8621}},
 		{id=11289,name="Garrote",subText="Rank 5",level=46,icon="Interface\\Icons\\Ability_Rogue_Garrote",school="Assassination",requiredIds={8633}},
-		{id=17347,name="[Deprecated] Hemorrhage",subText="Rank 2",level=46,icon="Interface\\Icons\\Spell_Shadow_LifeDrain",school="Subtlety"},
 		{id=11197,name="Expose Armor",subText="Rank 4",level=46,icon="Interface\\Icons\\Ability_Warrior_Riposte",school="Assassination",requiredIds={8650}}
 	},
 	[48] = {
@@ -218,8 +216,7 @@ ClassSpellsByLevel["Rogue"] = {
 	[58] = {
 		{id=1769,name="Kick",subText="Rank 4",level=58,icon="Interface\\Icons\\Ability_Kick",school="Combat",requiredIds={1768}},
 		{id=11269,name="Ambush",subText="Rank 6",level=58,icon="Interface\\Icons\\Ability_Rogue_Ambush",school="Assassination",requiredIds={11268}},
-		{id=11305,name="Sprint",subText="Rank 3",level=58,icon="Interface\\Icons\\Ability_Rogue_Sprint",school="Combat",requiredIds={8696}},
-		{id=17348,name="[Deprecated] Hemorrhage",subText="Rank 3",level=58,icon="Interface\\Icons\\Spell_Shadow_LifeDrain",school="Subtlety",requiredIds={17347}}
+		{id=11305,name="Sprint",subText="Rank 3",level=58,icon="Interface\\Icons\\Ability_Rogue_Sprint",school="Combat",requiredIds={8696}}
 	},
 	[60] = {
 		{id=11286,name="Gouge",subText="Rank 5",level=60,icon="Interface\\Icons\\Ability_Gouge",school="Combat",requiredIds={11285}},

@@ -185,7 +185,6 @@ ClassSpellsByLevel["Mage"] = {
 	},
 	[48] = {
 		{id=10149,name="Fireball",subText="Rank 9",level=48,icon="Interface\\Icons\\Spell_Fire_FlameBolt",school="Fire",requiredIds={10148}},
-		{id=10173,name="[Deprecated] Dampen Magic",subText="Rank 4",level=48,icon="Interface\\Icons\\Spell_Nature_AbolishMagic",school="Arcane"},
 		{id=10211,name="Arcane Missiles",subText="Rank 6",level=48,icon="Interface\\Icons\\Spell_Nature_StarFall",school="Arcane",requiredIds={8417}},
 		{id=10215,name="Flamestrike",subText="Rank 5",level=48,icon="Interface\\Icons\\Spell_Fire_SelfDestruct",school="Fire",requiredIds={8423}},
 		{id=10053,name="Conjure Mana Citrine",subText="",level=48,icon="Interface\\Icons\\INV_Misc_Gem_Opal_01",school="Arcane"},
@@ -215,7 +214,6 @@ ClassSpellsByLevel["Mage"] = {
 	},
 	[54] = {
 		{id=10150,name="Fireball",subText="Rank 10",level=54,icon="Interface\\Icons\\Spell_Fire_FlameBolt",school="Fire",requiredIds={133}},
-		{id=10170,name="[Deprecated] Amplify Magic",subText="Rank 4",level=54,icon="Interface\\Icons\\Spell_Holy_FlashHeal",school="Arcane"},
 		{id=10199,name="Fire Blast",subText="Rank 7",level=54,icon="Interface\\Icons\\Spell_Fire_Fireball",school="Fire",requiredIds={10197}},
 		{id=10202,name="Arcane Explosion",subText="Rank 6",level=54,icon="Interface\\Icons\\Spell_Nature_WispSplode",school="Arcane",requiredIds={10201}},
 		{id=10230,name="Frost Nova",subText="Rank 4",level=54,icon="Interface\\Icons\\Spell_Frost_FrostNova",school="Frost",requiredIds={6131}},
@@ -239,7 +237,6 @@ ClassSpellsByLevel["Mage"] = {
 	},
 	[60] = {
 		{id=10151,name="Fireball",subText="Rank 11",level=60,icon="Interface\\Icons\\Spell_Fire_FlameBolt",school="Fire",requiredIds={10150}},
-		{id=10174,name="[Deprecated] Dampen Magic",subText="Rank 5",level=60,icon="Interface\\Icons\\Spell_Nature_AbolishMagic",school="Arcane",requiredIds={10173}},
 		{id=10187,name="Blizzard",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Frost_IceStorm",school="Frost",requiredIds={10186}},
 		{id=10193,name="Mana Shield",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Shadow_DetectLesserInvisibility",school="Arcane",requiredIds={10192}},
 		{id=10220,name="Ice Armor",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Frost_FrostArmor02",school="Frost",requiredIds={10219}},

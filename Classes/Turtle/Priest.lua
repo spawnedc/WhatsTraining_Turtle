@@ -188,7 +188,6 @@ ClassSpellsByLevel["Priest"] = {
 		{id=27870,name="Lightwell",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy",requiredIds={724}},
 		{id=45562,name="Proclaim Champion",subText="",level=40,icon="Interface\\Icons\\Spell_Holy_ProclaimChampion_02",requiredTalent={id=199,tabIndex=2},school="Holy"},
 		{id=45563,name="Champion's Grace",subText="",level=40,icon="Interface\\Icons\\Spell_Holy_ChampionsGrace",school="Holy"},
-		{id=45569,name="[Deprecated] Champion's Resolve",subText="",level=40,icon="Interface\\Icons\\Spell_Holy_ProclaimChampion",school="Holy"},
 		{id=57701,name="Pain Spike",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic",requiredIds={45555}},
 		{id=51478,name="Chastise",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Holy_UnyieldingFaith",requiredTalent={id=183,tabIndex=1},school="Discipline"}
 	},

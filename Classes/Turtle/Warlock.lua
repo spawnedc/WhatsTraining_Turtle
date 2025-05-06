@@ -26,7 +26,6 @@ ClassSpellsByLevel["Warlock"] = {
 		{id=1120,name="Drain Soul",subText="Rank 1",level=10,icon="Interface\\Icons\\Spell_Shadow_Haunting",school="Affliction"}
 	},
 	[12] = {
-		{id=1108,name="[Deprecated] Curse of Weakness",subText="Rank 2",level=12,icon="Interface\\Icons\\Spell_Shadow_CurseOfMannoroth",school="Affliction"},
 		{id=755,name="Health Funnel",subText="Rank 1",level=12,icon="Interface\\Icons\\Spell_Shadow_LifeDrain",school="Demonology"},
 		{id=705,name="Shadow Bolt",subText="Rank 3",level=12,icon="Interface\\Icons\\Spell_Shadow_ShadowBolt",school="Destruction",requiredIds={695}}
 	},
@@ -55,7 +54,6 @@ ClassSpellsByLevel["Warlock"] = {
 		{id=48017,name="Summon Incubus",subText="Summon",level=20,icon="Interface\\Icons\\ability_warlock_incubus",school="Affliction"}
 	},
 	[22] = {
-		{id=6205,name="[Deprecated] Curse of Weakness",subText="Rank 3",level=22,icon="Interface\\Icons\\Spell_Shadow_CurseOfMannoroth",school="Affliction",requiredIds={1108}},
 		{id=6202,name="Create Healthstone (Lesser)",subText="",level=22,icon="Interface\\Icons\\INV_Stone_04",school="Demonology"},
 		{id=126,name="Eye of Kilrogg",subText="Summon",level=22,icon="Interface\\Icons\\Spell_Shadow_EvilEye",school="Demonology"},
 		{id=699,name="Drain Life",subText="Rank 2",level=22,icon="Interface\\Icons\\Spell_Shadow_LifeDrain02",school="Affliction",requiredIds={689}},
@@ -98,7 +96,6 @@ ClassSpellsByLevel["Warlock"] = {
 	},
 	[32] = {
 		{id=1490,name="Curse of the Elements",subText="Rank 1",level=32,icon="Interface\\Icons\\Spell_Shadow_ChillTouch",school="Affliction"},
-		{id=7646,name="[Deprecated] Curse of Weakness",subText="Rank 4",level=32,icon="Interface\\Icons\\Spell_Shadow_CurseOfMannoroth",school="Affliction",requiredIds={6205}},
 		{id=6213,name="Fear",subText="Rank 2",level=32,icon="Interface\\Icons\\Spell_Shadow_Possession",school="Affliction",requiredIds={5782}},
 		{id=6229,name="Shadow Ward",subText="Rank 1",level=32,icon="Interface\\Icons\\Spell_Shadow_AntiShadow",school="Demonology"},
 		{id=18868,name="Shadowburn",subText="Rank 3",level=32,icon="Interface\\Icons\\Spell_Shadow_ScourgeBuild",school="Destruction",requiredIds={18867}},
@@ -142,7 +139,6 @@ ClassSpellsByLevel["Warlock"] = {
 	},
 	[42] = {
 		{id=7659,name="Curse of Recklessness",subText="Rank 3",level=42,icon="Interface\\Icons\\Spell_Shadow_UnholyStrength",school="Affliction",requiredIds={7658}},
-		{id=11707,name="[Deprecated] Curse of Weakness",subText="Rank 5",level=42,icon="Interface\\Icons\\Spell_Shadow_CurseOfMannoroth",school="Affliction",requiredIds={7646}},
 		{id=11683,name="Hellfire",subText="Rank 2",level=42,icon="Interface\\Icons\\Spell_Fire_Incinerate",school="Destruction",requiredIds={1949}},
 		{id=11681,name="Hellfire Effect",subText="Rank 2",level=42,icon="Interface\\Icons\\Spell_Fire_Incinerate",school="Destruction",requiredIds={5857}},
 		{id=11739,name="Shadow Ward",subText="Rank 2",level=42,icon="Interface\\Icons\\Spell_Shadow_AntiShadow",school="Demonology",requiredIds={6229}},
@@ -189,7 +185,6 @@ ClassSpellsByLevel["Warlock"] = {
 		{id=52551,name="Dark Harvest",subText="Rank 2",level=50,icon="Interface\\Icons\\Spell_Shadow_SoulLeech",school="Affliction",requiredIds={52550}}
 	},
 	[52] = {
-		{id=11708,name="[Deprecated] Curse of Weakness",subText="Rank 6",level=52,icon="Interface\\Icons\\Spell_Shadow_CurseOfMannoroth",school="Affliction",requiredIds={11707}},
 		{id=11694,name="Health Funnel",subText="Rank 6",level=52,icon="Interface\\Icons\\Spell_Shadow_LifeDrain",school="Demonology",requiredIds={11693}},
 		{id=11660,name="Shadow Bolt",subText="Rank 8",level=52,icon="Interface\\Icons\\Spell_Shadow_ShadowBolt",school="Destruction",requiredIds={11659}},
 		{id=11740,name="Shadow Ward",subText="Rank 3",level=52,icon="Interface\\Icons\\Spell_Shadow_AntiShadow",school="Demonology",requiredIds={11739}},

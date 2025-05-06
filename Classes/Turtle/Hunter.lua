@@ -105,7 +105,6 @@ ClassSpellsByLevel["Hunter"] = {
 	[32] = {
 		{id=1543,name="Flare",subText="",level=32,icon="Interface\\Icons\\Spell_Fire_Flare",school="Marksmanship"},
 		{id=14263,name="Raptor Strike",subText="Rank 5",level=32,icon="Interface\\Icons\\Ability_MeleeDamage",school="Survival",requiredIds={14262}},
-		{id=14275,name="[Deprecated] Scorpid Sting",subText="Rank 2",level=32,icon="Interface\\Icons\\Ability_Hunter_CriticalShot",school="Marksmanship"},
 		{id=19878,name="Track Demons",subText="",level=32,icon="Interface\\Icons\\Spell_Shadow_SummonFelHunter",school="Survival"}
 	},
 	[34] = {
@@ -142,7 +141,6 @@ ClassSpellsByLevel["Hunter"] = {
 	},
 	[42] = {
 		{id=13553,name="Serpent Sting",subText="Rank 6",level=42,icon="Interface\\Icons\\Ability_Hunter_Quickshot",school="Marksmanship",requiredIds={13552}},
-		{id=14276,name="[Deprecated] Scorpid Sting",subText="Rank 3",level=42,icon="Interface\\Icons\\Ability_Hunter_CriticalShot",school="Marksmanship",requiredIds={14275}},
 		{id=14289,name="Multi-Shot",subText="Rank 3",level=42,icon="Interface\\Icons\\Ability_UpgradeMoonGlaive",school="Marksmanship",requiredIds={14288}},
 		{id=20909,name="Counterattack",subText="Rank 2",level=42,icon="Interface\\Icons\\Ability_Warrior_Challange",school="Survival",requiredIds={19306}}
 	},
@@ -177,7 +175,6 @@ ClassSpellsByLevel["Hunter"] = {
 	},
 	[52] = {
 		{id=13543,name="Mend Pet",subText="Rank 6",level=52,icon="Interface\\Icons\\Ability_Hunter_MendPet",school="Beast Mastery",requiredIds={13542}},
-		{id=14277,name="[Deprecated] Scorpid Sting",subText="Rank 4",level=52,icon="Interface\\Icons\\Ability_Hunter_CriticalShot",school="Marksmanship",requiredIds={14276}},
 		{id=14286,name="Arcane Shot",subText="Rank 7",level=52,icon="Interface\\Icons\\Ability_ImpalingBolt",school="Marksmanship",requiredIds={14285}}
 	},
 	[54] = {

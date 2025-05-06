@@ -3,6 +3,7 @@
 ## Version: 1.0.7
 ## Author: Sveng, Turtle Port by spawnedc
 ## Notes: Shows you what spells are available at your class trainer
+## SavedVariables: WarlockSpells
 
 Environment.lua
 Constants.lua
