@@ -6,8 +6,10 @@ function WhatsTraining:Initialise()
   if name then
     PlayerData:SetName(name)
   end
-  PlayerData:SetClass(UnitClass("player"))
-  PlayerData:SetRace(UnitRace("player"))
+  local localisedClass, englishClass = UnitClass("player")
+  local localisedRace, englishRace = UnitRace("player")
+  PlayerData:SetClass(englishClass)
+  PlayerData:SetRace(englishRace)
   PlayerData:SetLevel(UnitLevel("player"))
   PlayerData:SetSpellsByLevel(ClassSpellsByLevel[PlayerData.class])
 

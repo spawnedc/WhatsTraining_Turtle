@@ -1,5 +1,5 @@
 setfenv(1, WhatsTraining)
-OverridenSpells["Druid"] = {
+OverridenSpells["DRUID"] = {
 	[769] = {779,780},
 	[780] = {779},
 	[1735] = {99},
@@ -60,7 +60,7 @@ OverridenSpells["Druid"] = {
 	[51451] = {51401},
 	[51452] = {51401,51451}
 }
-ClassSpellsByLevel["Druid"] = {
+ClassSpellsByLevel["DRUID"] = {
 	[1] = {
 		{id=5185,name="Healing Touch",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Nature_HealingTouch",school="Restoration"},
 		{id=1126,name="Mark of the Wild",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Nature_Regeneration",school="Restoration"},

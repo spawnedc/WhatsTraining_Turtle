@@ -1,5 +1,5 @@
 setfenv(1, WhatsTraining)
-OverridenSpells["Rogue"] = {
+OverridenSpells["ROGUE"] = {
 	[1757] = {1752},
 	[1758] = {1752,1757},
 	[1759] = {1752,1757,1758},
@@ -65,7 +65,7 @@ OverridenSpells["Rogue"] = {
 	[25302] = {1966,6768,8637,11303},
 	[31016] = {2098,6760,6761,6762,8623,8624,11299,11300}
 }
-ClassSpellsByLevel["Rogue"] = {
+ClassSpellsByLevel["ROGUE"] = {
 	[1] = {
 		{id=1752,name="Sinister Strike",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Shadow_RitualOfSacrifice",school="Combat"},
 		{id=2098,name="Eviscerate",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_Rogue_Eviscerate",school="Assassination"},

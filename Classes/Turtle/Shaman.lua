@@ -1,5 +1,5 @@
 setfenv(1, WhatsTraining)
-OverridenSpells["Shaman"] = {
+OverridenSpells["SHAMAN"] = {
 	[45514] = {45505},
 	[51533] = {45527},
 	[51534] = {45527,51533},
@@ -8,7 +8,7 @@ OverridenSpells["Shaman"] = {
 	[52420] = {51387},
 	[52422] = {51387,52420}
 }
-ClassSpellsByLevel["Shaman"] = {
+ClassSpellsByLevel["SHAMAN"] = {
 	[1] = {
 		{id=331,name="Healing Wave",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Nature_MagicImmunity",school="Restoration"},
 		{id=403,name="Lightning Bolt",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Nature_Lightning",school="Elemental Combat"},
@@ -111,7 +111,7 @@ ClassSpellsByLevel["Shaman"] = {
 		{id=556,name="Astral Recall",subText="",level=30,icon="Interface\\Icons\\Spell_Nature_AstralRecal",school="Enhancement"},
 		{id=6364,name="Searing Totem",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Fire_SearingTotem",school="Elemental Combat",requiredIds={6363}},
 		{id=20608,name="Reincarnation",subText="Passive",level=30,icon="Interface\\Icons\\Spell_Nature_Reincarnation",school="Restoration"},
-		{id=45504,name="Hex",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Shaman_Hex",races={"Troll"},school="Elemental Combat"}
+		{id=45504,name="Hex",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Shaman_Hex",races={"TROLL"},school="Elemental Combat"}
 	},
 	[32] = {
 		{id=959,name="Healing Wave",subText="Rank 6",level=32,icon="Interface\\Icons\\Spell_Nature_MagicImmunity",school="Restoration",requiredIds={939}},
@@ -159,11 +159,11 @@ ClassSpellsByLevel["Shaman"] = {
 		{id=6365,name="Searing Totem",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Fire_SearingTotem",school="Elemental Combat",requiredIds={6364}},
 		{id=16190,name="Mana Tide Totem",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Frost_SummonWaterElemental",school="Restoration"},
 		{id=51363,name="Spirit Link",subText="",level=40,icon="Interface\\Icons\\Spell_Shaman_SpiritLink",requiredTalent={id=248,tabIndex=3},school="Restoration"},
-		{id=45505,name="Feral Spirit",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Shaman_FeralSpirit",races={"Orc"},school="Enhancement"},
+		{id=45505,name="Feral Spirit",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Shaman_FeralSpirit",races={"ORC"},school="Enhancement"},
 		{id=45509,name="Bloodlust",subText="",level=40,icon="Interface\\Icons\\Spell_Nature_BloodLust",requiredTalent={id=264,tabIndex=2},school="Enhancement"},
 		{id=45525,name="Earth Shield",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Nature_SkinofEarth",school="Enhancement"},
 		{id=45534,name="Lava Lash",subText="Rank 1",level=40,icon="Interface\\Icons\\Ability_Shaman_Lavalash",school="Enhancement"},
-		{id=45502,name="Ethereal Form",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Shaman_AstralShift",races={"Tauren"},school="Restoration"},
+		{id=45502,name="Ethereal Form",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Shaman_AstralShift",races={"TAUREN"},school="Restoration"},
 		{id=45500,name="Totemic Slam",subText="",level=40,icon="Interface\\Icons\\Ability_Smash",school="Enhancement"}
 	},
 	[42] = {
@@ -254,7 +254,7 @@ ClassSpellsByLevel["Shaman"] = {
 		{id=25361,name="Strength of Earth Totem",subText="Rank 5",level=60,icon="Interface\\Icons\\Spell_Nature_EarthBindTotem",school="Enhancement",requiredIds={10442}},
 		{id=25357,name="Healing Wave",subText="Rank 10",level=60,icon="Interface\\Icons\\Spell_Nature_MagicImmunity",school="Restoration",requiredIds={331}},
 		{id=29228,name="Flame Shock",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Fire_FlameShock",school="Elemental Combat",requiredIds={10448}},
-		{id=45514,name="Feral Spirit",subText="Rank 2",level=60,icon="Interface\\Icons\\Spell_Shaman_FeralSpirit",races={"Orc"},school="Enhancement",requiredIds={45505}},
+		{id=45514,name="Feral Spirit",subText="Rank 2",level=60,icon="Interface\\Icons\\Spell_Shaman_FeralSpirit",races={"ORC"},school="Enhancement",requiredIds={45505}},
 		{id=45511,name="[Deprecated] Bloodlust",subText="Rank 2",level=60,icon="Interface\\Icons\\Spell_Nature_BloodLust",school="Enhancement"},
 		{id=45521,name="[Deprecated] Stormstrike",subText="Rank 2",level=60,icon="Interface\\Icons\\Ability_Shaman_StormStrike",school="Enhancement"},
 		{id=51526,name="Earth Shield",subText="Rank 3",level=60,icon="Interface\\Icons\\Spell_Nature_SkinofEarth",school="Enhancement",requiredIds={51525}}

@@ -1,5 +1,5 @@
 setfenv(1, WhatsTraining)
-OverridenSpells["Warrior"] = {
+OverridenSpells["WARRIOR"] = {
 	[284] = {78},
 	[285] = {78,284},
 	[1608] = {78,284,285},
@@ -81,7 +81,7 @@ OverridenSpells["Warrior"] = {
 	[51630] = {51626,51627,51628,51629},
 	[52315] = {23922,23923,23924,23925}
 }
-ClassSpellsByLevel["Warrior"] = {
+ClassSpellsByLevel["WARRIOR"] = {
 	[1] = {
 		{id=78,name="Heroic Strike",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_Rogue_Ambush",school="Arms"},
 		{id=2457,name="Battle Stance",subText="",level=1,icon="Interface\\Icons\\Ability_Warrior_OffensiveStance",school="Arms"},
