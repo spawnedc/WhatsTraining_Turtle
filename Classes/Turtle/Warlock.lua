@@ -1,5 +1,5 @@
 setfenv(1, WhatsTraining)
-ClassSpellsByLevel["Warlock"] = {
+ClassSpellsByLevel["WARLOCK"] = {
 	[1] = {
 		{id=687,name="Demon Armor",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Shadow_RagingScream",school="Demonology"},
 		{id=688,name="Summon Imp",subText="Summon",level=1,icon="Interface\\Icons\\Spell_Shadow_SummonImp",school="Demonology"},

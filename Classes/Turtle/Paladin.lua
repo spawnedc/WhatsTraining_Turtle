@@ -1,5 +1,5 @@
 setfenv(1, WhatsTraining)
-OverridenSpells["Paladin"] = {
+OverridenSpells["PALADIN"] = {
 	[643] = {465,10290},
 	[1032] = {465,10290,643,10291},
 	[2800] = {633},
@@ -23,7 +23,7 @@ OverridenSpells["Paladin"] = {
 	[51557] = {20066},
 	[51558] = {20066,51557}
 }
-ClassSpellsByLevel["Paladin"] = {
+ClassSpellsByLevel["PALADIN"] = {
 	[1] = {
 		{id=465,name="Devotion Aura",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_DevotionAura",school="Protection"},
 		{id=635,name="Holy Light",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_HolyBolt",school="Holy"},

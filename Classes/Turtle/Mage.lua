@@ -1,5 +1,5 @@
 setfenv(1, WhatsTraining)
-ClassSpellsByLevel["Mage"] = {
+ClassSpellsByLevel["MAGE"] = {
 	[1] = {
 		{id=133,name="Fireball",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Fire_FlameBolt",school="Fire"},
 		{id=1459,name="Arcane Intellect",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_MagicalSentry",school="Arcane"},
@@ -55,10 +55,10 @@ ClassSpellsByLevel["Mage"] = {
 	},
 	[20] = {
 		{id=543,name="Fire Ward",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Fire_FireArmor",school="Fire"},
-		{id=3562,name="Teleport: Ironforge",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportIronForge",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"},
-		{id=3567,name="Teleport: Orgrimmar",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportOrgrimmar",races={"Goblin","Troll","Tauren","Undead","Orc"},school="Arcane"},
-		{id=3561,name="Teleport: Stormwind",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportStormWind",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"},
-		{id=3563,name="Teleport: Undercity",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportUnderCity",races={"Goblin","Troll","Tauren","Undead","Orc"},school="Arcane"},
+		{id=3562,name="Teleport: Ironforge",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportIronForge",races={"HIGHELF","GNOME","NIGHTELF","DWARF","HUMAN"},school="Arcane"},
+		{id=3567,name="Teleport: Orgrimmar",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportOrgrimmar",races={"GOBLIN","TROLL","TAUREN","UNDEAD","ORC"},school="Arcane"},
+		{id=3561,name="Teleport: Stormwind",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportStormWind",races={"HIGHELF","GNOME","NIGHTELF","DWARF","HUMAN"},school="Arcane"},
+		{id=3563,name="Teleport: Undercity",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportUnderCity",races={"GOBLIN","TROLL","TAUREN","UNDEAD","ORC"},school="Arcane"},
 		{id=10,name="Blizzard",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Frost_IceStorm",school="Frost"},
 		{id=7301,name="Frost Armor",subText="Rank 3",level=20,icon="Interface\\Icons\\Spell_Frost_FrostArmor02",school="Frost",requiredIds={7300}},
 		{id=7322,name="Frostbolt",subText="Rank 4",level=20,icon="Interface\\Icons\\Spell_Frost_FrostBolt02",school="Frost",requiredIds={837}},
@@ -68,8 +68,8 @@ ClassSpellsByLevel["Mage"] = {
 		{id=12472,name="Cold Snap",subText="",level=20,icon="Interface\\Icons\\Spell_Frost_WizardMark",requiredTalent={id=26,tabIndex=3},school="Frost"},
 		{id=12824,name="Polymorph",subText="Rank 2",level=20,icon="Interface\\Icons\\Spell_Nature_Polymorph",school="Arcane",requiredIds={118}},
 		{id=1953,name="Blink",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_Blink",school="Arcane"},
-		{id=52615,name="Teleport: Alah'Thalas",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportStormWind",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"},
-		{id=49358,name="Teleport: Stonard",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportStonard",races={"Goblin","Troll","Tauren","Undead","Orc"},school="Arcane"},
+		{id=52615,name="Teleport: Alah'Thalas",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportStormWind",races={"HIGHELF","GNOME","NIGHTELF","DWARF","HUMAN"},school="Arcane"},
+		{id=49358,name="Teleport: Stonard",subText="",level=20,icon="Interface\\Icons\\Spell_Arcane_TeleportStonard",races={"GOBLIN","TROLL","TAUREN","UNDEAD","ORC"},school="Arcane"},
 		{id=51949,name="Arcane Rupture",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Arcane_Blast",requiredTalent={id=45,tabIndex=1},school="Arcane"}
 	},
 	[22] = {
@@ -100,8 +100,8 @@ ClassSpellsByLevel["Mage"] = {
 		{id=51950,name="Arcane Rupture",subText="Rank 2",level=28,icon="Interface\\Icons\\Spell_Arcane_Blast",school="Arcane",requiredIds={51949}}
 	},
 	[30] = {
-		{id=3565,name="Teleport: Darnassus",subText="",level=30,icon="Interface\\Icons\\Spell_Arcane_TeleportDarnassus",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"},
-		{id=3566,name="Teleport: Thunder Bluff",subText="",level=30,icon="Interface\\Icons\\Spell_Arcane_TeleportThunderBluff",races={"Goblin","Troll","Tauren","Undead","Orc"},school="Arcane"},
+		{id=3565,name="Teleport: Darnassus",subText="",level=30,icon="Interface\\Icons\\Spell_Arcane_TeleportDarnassus",races={"HIGHELF","GNOME","NIGHTELF","DWARF","HUMAN"},school="Arcane"},
+		{id=3566,name="Teleport: Thunder Bluff",subText="",level=30,icon="Interface\\Icons\\Spell_Arcane_TeleportThunderBluff",races={"GOBLIN","TROLL","TAUREN","UNDEAD","ORC"},school="Arcane"},
 		{id=7302,name="Ice Armor",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Frost_FrostArmor02",school="Frost"},
 		{id=8401,name="Fireball",subText="Rank 6",level=30,icon="Interface\\Icons\\Spell_Fire_FlameBolt",school="Fire",requiredIds={8400}},
 		{id=8412,name="Fire Blast",subText="Rank 4",level=30,icon="Interface\\Icons\\Spell_Fire_Fireball",school="Fire",requiredIds={2138}},
@@ -112,7 +112,7 @@ ClassSpellsByLevel["Mage"] = {
 		{id=11958,name="Ice Block",subText="",level=30,icon="Interface\\Icons\\Spell_Frost_Frost",requiredTalent={id=31,tabIndex=3},school="Frost"},
 		{id=12522,name="Pyroblast",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Fire_Fireball02",school="Fire",requiredIds={12505}},
 		{id=52516,name="Icicles",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Frost_FrostBlast",requiredTalent={id=32,tabIndex=3},school="Frost"},
-		{id=49361,name="Teleport: Theramore",subText="",level=30,icon="Interface\\Icons\\Spell_Arcane_TeleportTheramore",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"}
+		{id=49361,name="Teleport: Theramore",subText="",level=30,icon="Interface\\Icons\\Spell_Arcane_TeleportTheramore",races={"HIGHELF","GNOME","NIGHTELF","DWARF","HUMAN"},school="Arcane"}
 	},
 	[32] = {
 		{id=8407,name="Frostbolt",subText="Rank 6",level=32,icon="Interface\\Icons\\Spell_Frost_FrostBolt02",school="Frost",requiredIds={8406}},
@@ -148,17 +148,17 @@ ClassSpellsByLevel["Mage"] = {
 		{id=8423,name="Flamestrike",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Fire_SelfDestruct",school="Fire",requiredIds={8422}},
 		{id=8446,name="Scorch",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Fire_SoulBurn",school="Fire",requiredIds={8445}},
 		{id=8458,name="Fire Ward",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Fire_FireArmor",school="Fire",requiredIds={8457}},
-		{id=11416,name="Portal: Ironforge",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalIronForge",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"},
-		{id=11417,name="Portal: Orgrimmar",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalOrgrimmar",races={"Goblin","Troll","Tauren","Undead","Orc"},school="Arcane"},
-		{id=10059,name="Portal: Stormwind",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalStormWind",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"},
-		{id=11418,name="Portal: Undercity",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalUnderCity",races={"Goblin","Troll","Tauren","Undead","Orc"},school="Arcane"},
+		{id=11416,name="Portal: Ironforge",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalIronForge",races={"HIGHELF","GNOME","NIGHTELF","DWARF","HUMAN"},school="Arcane"},
+		{id=11417,name="Portal: Orgrimmar",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalOrgrimmar",races={"GOBLIN","TROLL","TAUREN","UNDEAD","ORC"},school="Arcane"},
+		{id=10059,name="Portal: Stormwind",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalStormWind",races={"HIGHELF","GNOME","NIGHTELF","DWARF","HUMAN"},school="Arcane"},
+		{id=11418,name="Portal: Undercity",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalUnderCity",races={"GOBLIN","TROLL","TAUREN","UNDEAD","ORC"},school="Arcane"},
 		{id=11426,name="Ice Barrier",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Ice_Lament",requiredTalent={id=36,tabIndex=3},school="Frost"},
 		{id=10138,name="Conjure Water",subText="Rank 5",level=40,icon="Interface\\Icons\\INV_Drink_09",school="Arcane",requiredIds={6127}},
 		{id=11129,name="Combustion",subText="",level=40,icon="Interface\\Icons\\Spell_Fire_SealOfFire",requiredTalent={id=17,tabIndex=2},school="Fire"},
 		{id=12825,name="Polymorph",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Nature_Polymorph",school="Arcane",requiredIds={12824}},
 		{id=51991,name="Icicles",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Frost_FrostBlast",school="Frost",requiredIds={52516}},
-		{id=52618,name="Portal: Alah'Thalas",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalStormWind",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"},
-		{id=49362,name="Portal: Stonard",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalStonard",races={"Goblin","Troll","Tauren","Undead","Orc"},school="Arcane"},
+		{id=52618,name="Portal: Alah'Thalas",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalStormWind",races={"HIGHELF","GNOME","NIGHTELF","DWARF","HUMAN"},school="Arcane"},
+		{id=49362,name="Portal: Stonard",subText="",level=40,icon="Interface\\Icons\\Spell_Arcane_PortalStonard",races={"GOBLIN","TROLL","TAUREN","UNDEAD","ORC"},school="Arcane"},
 		{id=51934,name="Arcane Surge",subText="Rank 2",level=40,icon="Interface\\Icons\\INV_Enchant_EssenceMysticalLarge",school="Arcane",requiredIds={51933}}
 	},
 	[42] = {
@@ -197,11 +197,11 @@ ClassSpellsByLevel["Mage"] = {
 		{id=10180,name="Frostbolt",subText="Rank 9",level=50,icon="Interface\\Icons\\Spell_Frost_FrostBolt02",school="Frost",requiredIds={10179}},
 		{id=10219,name="Ice Armor",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Frost_FrostArmor02",school="Frost",requiredIds={7320}},
 		{id=10223,name="Fire Ward",subText="Rank 4",level=50,icon="Interface\\Icons\\Spell_Fire_FireArmor",school="Fire",requiredIds={8458}},
-		{id=11419,name="Portal: Darnassus",subText="",level=50,icon="Interface\\Icons\\Spell_Arcane_PortalDarnassus",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"},
-		{id=11420,name="Portal: Thunder Bluff",subText="",level=50,icon="Interface\\Icons\\Spell_Arcane_PortalThunderBluff",races={"Goblin","Troll","Tauren","Undead","Orc"},school="Arcane"},
+		{id=11419,name="Portal: Darnassus",subText="",level=50,icon="Interface\\Icons\\Spell_Arcane_PortalDarnassus",races={"HIGHELF","Gnome","NIGHTELF","DWARF","HUMAN"},school="Arcane"},
+		{id=11420,name="Portal: Thunder Bluff",subText="",level=50,icon="Interface\\Icons\\Spell_Arcane_PortalThunderBluff",races={"GOBLIN","TROLL","TAUREN","UNDEAD","ORC"},school="Arcane"},
 		{id=10139,name="Conjure Water",subText="Rank 6",level=50,icon="Interface\\Icons\\INV_Drink_11",school="Arcane",requiredIds={10138}},
 		{id=51995,name="Icicles",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Frost_FrostBlast",school="Frost",requiredIds={51991}},
-		{id=49366,name="Portal: Theramore",subText="",level=50,icon="Interface\\Icons\\Spell_Arcane_PortalTheramore",races={"High Elf","Gnome","Night Elf","Dwarf","Human"},school="Arcane"}
+		{id=49366,name="Portal: Theramore",subText="",level=50,icon="Interface\\Icons\\Spell_Arcane_PortalTheramore",races={"HIGHELF","Gnome","NIGHTELF","DWARF","HUMAN"},school="Arcane"}
 	},
 	[52] = {
 		{id=10177,name="Frost Ward",subText="Rank 4",level=52,icon="Interface\\Icons\\Spell_Frost_FrostWard",school="Frost",requiredIds={8462}},

@@ -1,10 +1,10 @@
 setfenv(1, WhatsTraining)
-OverridenSpells["Hunter"] = {
+OverridenSpells["HUNTER"] = {
 	[1528] = {1513},
 	[52415] = {51575},
 	[52416] = {51575,52415}
 }
-ClassSpellsByLevel["Hunter"] = {
+ClassSpellsByLevel["HUNTER"] = {
 	[1] = {
 		{id=75,name="Auto Shot",subText="",level=1,icon="Interface\\Icons\\Ability_Whirlwind",school="Marksmanship"},
 		{id=2973,name="Raptor Strike",subText="Rank 1",level=1,icon="Interface\\Icons\\Ability_MeleeDamage",school="Survival"},
