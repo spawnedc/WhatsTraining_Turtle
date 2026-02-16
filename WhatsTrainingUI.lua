@@ -17,6 +17,7 @@ function WhatsTrainingUI:Initialize()
   self.rows = {}
   self.tooltip = CreateFrame("GameTooltip", "WhatsTrainingTooltip", UIParent,
     "GameTooltipTemplate")
+  self:SetupHooks()
 end
 
 function WhatsTrainingUI:Update()
@@ -39,6 +40,14 @@ function WhatsTrainingUI:Update()
   end
 end
 
+function WhatsTrainingUI:ClearItems()
+  for i, row in ipairs(self.rows) do
+    row:Hide()
+    row:SetParent(nil)
+  end
+  self.rows = {}
+end
+
 function WhatsTrainingUI:showTabTooltip()
   GameTooltip:SetOwner(self.tab, "ANCHOR_RIGHT");
   GameTooltip:SetText("What can I train?");
@@ -58,16 +67,22 @@ function WhatsTrainingUI:HideFrame()
 end
 
 function WhatsTrainingUI:ShowFrame()
+  -- Uncheck all spell skill tabs
+  local i = 1
+  while getglobal("SpellBookSkillLineTab"..i) do
+    getglobal("SpellBookSkillLineTab"..i):SetChecked(false)
+    i = i + 1
+  end
+  
   self.tab:SetChecked(true)
   self.frame:Show()
 end
 
-function WhatsTrainingUI:handleTabToggle()
-  if self.tab:GetChecked() then
-    self.frame:Show()
-  else
-    self.frame:Hide()
-  end
+function WhatsTrainingUI:handleTabClick()
+  -- Hook spell tabs now if not already done (spellbook is definitely open)
+  self:HookSpellTabs()
+  -- Always show when clicked (like a tab, not a toggle)
+  self:ShowFrame()
 end
 
 -- Sets up the tab
@@ -91,7 +106,7 @@ function WhatsTrainingUI:SetupTab()
 
   tab:SetNormalTexture(TAB_TEXTURE_FILEID)
 
-  tab:SetScript("OnClick", function() WhatsTrainingUI:handleTabToggle() end)
+  tab:SetScript("OnClick", function() WhatsTrainingUI:handleTabClick() end)
   tab:SetScript("OnEnter", function() WhatsTrainingUI:showTabTooltip() end)
   tab:SetScript("OnLeave", function() WhatsTrainingUI:hideTabTooltip() end)
 
@@ -102,9 +117,11 @@ function WhatsTrainingUI:InitDisplay()
   self.frame = CreateFrame("Frame", "WhatsTrainingFrame", SpellBookFrame)
   self.frame:SetPoint("TOPLEFT", SpellBookFrame, "TOPLEFT", 0, 0)
   self.frame:SetPoint("BOTTOMRIGHT", SpellBookFrame, "BOTTOMRIGHT", 0, 0)
-  self.frame:SetFrameStrata("HIGH")
-  -- prevents mouse hover leaking
-  self.frame:EnableMouse(true)
+  self.frame:SetFrameStrata("MEDIUM")
+  self.frame:SetFrameLevel(SpellBookFrame:GetFrameLevel() + 5)
+  -- prevents mouse hover leaking but allows close button clicks
+  self.frame:EnableMouse(false)
+  self.frame:EnableMouseWheel(true)
 
   self.tab = WhatsTrainingUI:SetupTab()
 
@@ -129,8 +146,61 @@ function WhatsTrainingUI:InitDisplay()
   self.scrollBar:SetScript("OnVerticalScroll", function()
     FauxScrollFrame_OnVerticalScroll(ROW_HEIGHT, function() WhatsTrainingUI:Update() end)
   end)
+  
+  -- Enable mouse on scrollbar content area - positioned to not block spell tabs on left
+  local scrollContent = CreateFrame("Frame", nil, self.frame)
+  scrollContent:SetPoint("TOPLEFT", 60, -70)
+  scrollContent:SetPoint("BOTTOMRIGHT", -60, 80)
+  scrollContent:EnableMouse(true)
 
   self.frame:Hide()
+end
+
+function WhatsTrainingUI:HookSpellTabs()
+  -- Hook individual spell tab buttons directly after they exist
+  for i = 1, 8 do
+    local tab = getglobal("SpellBookSkillLineTab"..i)
+    if tab and not tab.whatsTrainingHooked then
+      -- Manual hooking for 1.12.1 compatibility
+      local originalOnClick = tab:GetScript("OnClick")
+      tab:SetScript("OnClick", function()
+        -- Hide WhatsTraining when a spell tab is clicked
+        if WhatsTrainingUI.frame and WhatsTrainingUI.frame:IsVisible() then
+          WhatsTrainingUI:HideFrame()
+        end
+        -- Call original handler
+        if originalOnClick then
+          originalOnClick()
+        end
+      end)
+      tab.whatsTrainingHooked = true
+    end
+  end
+end
+
+function WhatsTrainingUI:SetupHooks()
+  -- Hook into SpellBookFrame's hide event (manual hooking for 1.12.1)
+  local originalOnHide = SpellBookFrame:GetScript("OnHide")
+  SpellBookFrame:SetScript("OnHide", function()
+    WhatsTrainingUI:HideFrame()
+    if originalOnHide then
+      originalOnHide()
+    end
+  end)
+  
+  -- Hook spell tabs after they're created when spellbook opens
+  local originalOnShow = SpellBookFrame:GetScript("OnShow")
+  SpellBookFrame:SetScript("OnShow", function()
+    WhatsTrainingUI:HookSpellTabs()
+    if originalOnShow then
+      originalOnShow()
+    end
+  end)
+  
+  -- If spellbook is already visible, hook tabs immediately
+  if SpellBookFrame:IsVisible() then
+    WhatsTrainingUI:HookSpellTabs()
+  end
 end
 
 ---Sets the given spells as rows
@@ -195,8 +265,35 @@ function WhatsTrainingUI:SetItems(spells)
         row:RegisterForClicks("LeftButtonUp", "RightButtonUp")
         row:SetScript("OnEnter", function()
           self.tooltip:SetOwner(row, "ANCHOR_RIGHT")
-          self.tooltip:AddDoubleLine(row.spell.name, row.spell.id, 1, 1, 1, 1, 1, 1)
-          self.tooltip:AddDoubleLine(row.spell.school, row.spell.subText)
+          -- Try to find the spell in spellbook for proper tooltip
+          local spellName = row.spell.name
+          local spellRank = row.spell.subText
+          local found = false
+          
+          local i = 1
+          while true do
+            local name, rank = GetSpellName(i, BOOKTYPE_SPELL)
+            if not name then break end
+            
+            if name == spellName and (spellRank == "" or rank == spellRank) then
+              self.tooltip:SetSpell(i, BOOKTYPE_SPELL)
+              found = true
+              break
+            end
+            i = i + 1
+          end
+          
+          if not found then
+            -- Fallback to custom tooltip
+            self.tooltip:AddLine(spellName, 1, 1, 1)
+            if spellRank and spellRank ~= "" then
+              self.tooltip:AddLine(spellRank, 0.5, 0.5, 0.5)
+            end
+            self.tooltip:AddLine(" ")
+            self.tooltip:AddLine(row.spell.school, 1, 0.82, 0)
+            self.tooltip:AddLine("Level " .. row.spell.level .. " spell", 0.5, 0.5, 0.5)
+          end
+          
           self.tooltip:Show()
         end)
         row:SetScript("OnLeave", function() self.tooltip:Hide() end)

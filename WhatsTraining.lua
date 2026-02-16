@@ -26,15 +26,28 @@ function WhatsTraining:Initialise()
   WhatsTrainingUI:SetItems(PlayerData.spellsByCategory)
 end
 
+function WhatsTraining:Refresh()
+  PlayerData:SetLevel(UnitLevel("player"))
+  PlayerData:GetKnownSpells()
+  PlayerData:GetAvailableSpells()
+  
+  WhatsTrainingUI:ClearItems()
+  WhatsTrainingUI:SetItems(PlayerData.spellsByCategory)
+  WhatsTrainingUI:Update()
+end
+
 local function OnEvent()
   if event == "PLAYER_ENTERING_WORLD" then
     WhatsTraining:Initialise()
+  elseif event == "PLAYER_LEVEL_UP" then
+    WhatsTraining:Refresh()
   elseif event == "SPELLS_CHANGED" then
-    WhatsTrainingUI:HideFrame()
+    WhatsTraining:Refresh()
   end
 end
 
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent("PLAYER_LEVEL_UP")
 f:RegisterEvent("SPELLS_CHANGED")
 f:SetScript("OnEvent", OnEvent)

@@ -169,8 +169,7 @@ ClassSpellsByLevel["WARRIOR"] = {
 	[34] = {
 		{id=11554,name="Demoralizing Shout",subText="Rank 3",level=34,icon="Interface\\Icons\\Ability_Warrior_WarCry",school="Fury",requiredIds={6190}},
 		{id=7379,name="Revenge",subText="Rank 3",level=34,icon="Interface\\Icons\\Ability_Warrior_Revenge",school="Protection",requiredIds={6574}},
-		{id=8380,name="Sunder Armor",subText="Rank 3",level=34,icon="Interface\\Icons\\Ability_Warrior_Sunder",school="Protection",requiredIds={7405}},
-		{id=45599,name="Slam",subText="Rank 3",level=34,icon="Interface\\Icons\\Ability_Warrior_DecisiveStrike",school="Fury",requiredIds={11604}}
+		{id=8380,name="Sunder Armor",subText="Rank 3",level=34,icon="Interface\\Icons\\Ability_Warrior_Sunder",school="Protection",requiredIds={7405}}
 	},
 	[36] = {
 		{id=7402,name="Mocking Blow",subText="Rank 3",level=36,icon="Interface\\Icons\\Ability_Warrior_PunishingBlow",school="Arms",requiredIds={7400}},
@@ -231,10 +230,9 @@ ClassSpellsByLevel["WARRIOR"] = {
 		{id=21552,name="Mortal Strike",subText="Rank 3",level=54,icon="Interface\\Icons\\Ability_Warrior_SavageBlow",school="Arms",requiredIds={21551}},
 		{id=23893,name="Bloodthirst",subText="Rank 3",level=54,icon="Interface\\Icons\\Spell_Nature_BloodLust",school="Fury",requiredIds={23892}},
 		{id=23925,name="Shield Slam",subText="Rank 4",level=54,icon="Interface\\Icons\\INV_Shield_05",school="Protection",requiredIds={23924}},
-		{id=1464,name="Slam",subText="Rank 1",level=54,icon="Interface\\Icons\\Ability_Warrior_DecisiveStrike_New",school="Arms"},
 		{id=8820,name="Slam",subText="Rank 2",level=54,icon="Interface\\Icons\\Ability_Warrior_DecisiveStrike_New",school="Arms",requiredIds={1464}},
 		{id=11604,name="Slam",subText="Rank 3",level=54,icon="Interface\\Icons\\Ability_Warrior_DecisiveStrike_New",school="Arms",requiredIds={8820}},
-		{id=11605,name="Slam",subText="Rank 4",level=54,icon="Interface\\Icons\\Ability_Warrior_DecisiveStrike_New",school="Arms",requiredIds={45599}},
+		{id=11605,name="Slam",subText="Rank 4",level=54,icon="Interface\\Icons\\Ability_Warrior_DecisiveStrike_New",school="Arms",requiredIds={11604}},
 		{id=45961,name="Slam",subText="Rank 5",level=54,icon="Interface\\Icons\\Ability_Warrior_DecisiveStrike_New",school="Arms",requiredIds={11605}}
 	},
 	[56] = {
