@@ -32,7 +32,7 @@ SpellCategoryHeaders = { {
   color = GREEN_FONT_COLOR_CODE,
   hideLevel = true,
   key = SpellCategories.AVAILABLE,
-  showSpellSchoolHeader = true
+  showSpellSchoolHeader = false
 }, {
   name = "Available but missing requirements",
   color = ORANGE_FONT_COLOR_CODE,

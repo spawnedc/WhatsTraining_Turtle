@@ -79,7 +79,11 @@ function PlayerData:SetSpellsByLevel(spellsByLevel)
       self.spellsById[spell.id] = spell
 
       local spellNameKey = Utils.getSpellWithRankKey(spell.name, spell.subText)
-      self.spellsByNameAndRank[spellNameKey] = spell
+      -- Store spells in arrays to handle duplicates (e.g., multiple Dampen Magic IDs)
+      if not self.spellsByNameAndRank[spellNameKey] then
+        self.spellsByNameAndRank[spellNameKey] = {}
+      end
+      tinsert(self.spellsByNameAndRank[spellNameKey], spell)
     end
   end
 end
@@ -106,16 +110,19 @@ function PlayerData:GetKnownSpells()
     end
 
     local spellNameKey = Utils.getSpellWithRankKey(name, rank)
-    local spell = self.spellsByNameAndRank[spellNameKey]
+    local spells = self.spellsByNameAndRank[spellNameKey]
 
-    if (spell) then
-      -- Utils.log(name .. " (" .. rank .. ") - [" .. spell.id .. "]")
-      tinsert(self.knownSpellIds, spell.id)
+    if (spells) then
+      -- Mark all spells with this name/rank as known (handles duplicates like Dampen Magic)
+      for _, spell in ipairs(spells) do
+        -- Utils.log(name .. " (" .. rank .. ") - [" .. spell.id .. "]")
+        tinsert(self.knownSpellIds, spell.id)
 
-      local overridenSpellIds = self.overridenSpells[spell.id]
-      if (overridenSpellIds) then
-        for _, spellId in ipairs(overridenSpellIds) do
-          tinsert(self.knownSpellIds, spellId)
+        local overridenSpellIds = self.overridenSpells[spell.id]
+        if (overridenSpellIds) then
+          for _, spellId in ipairs(overridenSpellIds) do
+            tinsert(self.knownSpellIds, spellId)
+          end
         end
       end
     end

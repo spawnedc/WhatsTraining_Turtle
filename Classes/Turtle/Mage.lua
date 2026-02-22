@@ -3,8 +3,7 @@ ClassSpellsByLevel["MAGE"] = {
 	[1] = {
 		{id=133,name="Fireball",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Fire_FlameBolt",school="Fire"},
 		{id=1459,name="Arcane Intellect",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Holy_MagicalSentry",school="Arcane"},
-		{id=168,name="Frost Armor",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Frost_FrostArmor02",school="Frost"},
-		{id=12484,name="Chilled",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Frost_IceStorm",school="Frost"}
+		{id=168,name="Frost Armor",subText="Rank 1",level=1,icon="Interface\\Icons\\Spell_Frost_FrostArmor02",school="Frost"}
 	},
 	[4] = {
 		{id=116,name="Frostbolt",subText="Rank 1",level=4,icon="Interface\\Icons\\Spell_Frost_FrostBolt02",school="Frost"},
@@ -23,15 +22,11 @@ ClassSpellsByLevel["MAGE"] = {
 	[10] = {
 		{id=122,name="Frost Nova",subText="Rank 1",level=10,icon="Interface\\Icons\\Spell_Frost_FrostNova",school="Frost"},
 		{id=7300,name="Frost Armor",subText="Rank 2",level=10,icon="Interface\\Icons\\Spell_Frost_FrostArmor02",school="Frost",requiredIds={168}},
-		{id=5505,name="Conjure Water",subText="Rank 2",level=10,icon="Interface\\Icons\\INV_Drink_07",school="Arcane",requiredIds={5504}},
-		{id=12485,name="Chilled",subText="Rank 2",level=10,icon="Interface\\Icons\\Spell_Frost_IceStorm",school="Frost",requiredIds={12484}},
-		{id=12486,name="Chilled",subText="Rank 3",level=10,icon="Interface\\Icons\\Spell_Frost_IceStorm",school="Frost",requiredIds={12485}}
+		{id=5505,name="Conjure Water",subText="Rank 2",level=10,icon="Interface\\Icons\\INV_Drink_07",school="Arcane",requiredIds={5504}}
 	},
 	[12] = {
 		{id=145,name="Fireball",subText="Rank 3",level=12,icon="Interface\\Icons\\Spell_Fire_FlameBolt",school="Fire",requiredIds={143}},
 		{id=604,name="Dampen Magic",subText="",level=12,icon="Interface\\Icons\\Spell_Nature_AbolishMagic",school="Arcane"},
-		{id=8450,name="Dampen Magic",subText="",level=12,icon="Interface\\Icons\\Spell_Nature_AbolishMagic",school="Arcane"},
-		{id=8451,name="Dampen Magic",subText="",level=12,icon="Interface\\Icons\\Spell_Nature_AbolishMagic",school="Arcane"},
 		{id=130,name="Slow Fall",subText="",level=12,icon="Interface\\Icons\\Spell_Magic_FeatherFall",school="Arcane"},
 		{id=597,name="Conjure Food",subText="Rank 2",level=12,icon="Interface\\Icons\\INV_Misc_Food_09",school="Arcane",requiredIds={587}}
 	},
@@ -49,9 +44,7 @@ ClassSpellsByLevel["MAGE"] = {
 	[18] = {
 		{id=3140,name="Fireball",subText="Rank 4",level=18,icon="Interface\\Icons\\Spell_Fire_FlameBolt",school="Fire",requiredIds={145}},
 		{id=475,name="Remove Lesser Curse",subText="",level=18,icon="Interface\\Icons\\Spell_Nature_RemoveCurse",school="Arcane"},
-		{id=1008,name="Amplify Magic",subText="",level=18,icon="Interface\\Icons\\Spell_Holy_FlashHeal",school="Arcane"},
-		{id=8455,name="Amplify Magic",subText="",level=18,icon="Interface\\Icons\\Spell_Holy_FlashHeal",school="Arcane"},
-		{id=10169,name="Amplify Magic",subText="",level=18,icon="Interface\\Icons\\Spell_Holy_FlashHeal",school="Arcane"}
+		{id=1008,name="Amplify Magic",subText="",level=18,icon="Interface\\Icons\\Spell_Holy_FlashHeal",school="Arcane"}
 	},
 	[20] = {
 		{id=543,name="Fire Ward",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Fire_FireArmor",school="Fire"},
