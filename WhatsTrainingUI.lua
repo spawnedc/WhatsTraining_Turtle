@@ -41,6 +41,7 @@ function WhatsTrainingUI:Update()
 end
 
 function WhatsTrainingUI:ClearItems()
+  if not self.rows then return end
   for i, row in ipairs(self.rows) do
     row:Hide()
     row:SetParent(nil)
