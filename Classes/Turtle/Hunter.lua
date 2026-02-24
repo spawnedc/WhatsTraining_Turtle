@@ -1,8 +1,6 @@
 setfenv(1, WhatsTraining)
 OverridenSpells["HUNTER"] = {
 	[1528] = {1513},
-	[52415] = {51575},
-	[52416] = {51575,52415}
 }
 ClassSpellsByLevel["HUNTER"] = {
 	[1] = {
@@ -67,8 +65,7 @@ ClassSpellsByLevel["HUNTER"] = {
 		{id=1499,name="Freezing Trap",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Frost_ChainsOfIce",school="Survival"},
 		{id=14274,name="Distracting Shot",subText="Rank 2",level=20,icon="Interface\\Icons\\Spell_Arcane_Blink",school="Marksmanship",requiredIds={20736}},
 		{id=14282,name="Arcane Shot",subText="Rank 3",level=20,icon="Interface\\Icons\\Ability_ImpalingBolt",school="Marksmanship",requiredIds={14281}},
-		{id=45649,name="Aspect of the Turtle",subText="",level=20,icon="Interface\\Icons\\Ability_Hunter_Pet_Turtle",school="Beast Mastery"},
-		{id=51575,name="Carve",subText="Rank 1",level=20,icon="Interface\\Icons\\INV_ThrowingKnife_06",requiredTalent={id=396,tabIndex=3},school="Survival"}
+		{id=45649,name="Aspect of the Turtle",subText="",level=20,icon="Interface\\Icons\\Ability_Hunter_Pet_Turtle",school="Beast Mastery"}
 	},
 	[22] = {
 		{id=3043,name="Scorpid Sting",subText="",level=22,icon="Interface\\Icons\\Ability_Hunter_CriticalShot",school="Marksmanship"},
@@ -105,7 +102,6 @@ ClassSpellsByLevel["HUNTER"] = {
 	[32] = {
 		{id=1543,name="Flare",subText="",level=32,icon="Interface\\Icons\\Spell_Fire_Flare",school="Marksmanship"},
 		{id=14263,name="Raptor Strike",subText="Rank 5",level=32,icon="Interface\\Icons\\Ability_MeleeDamage",school="Survival",requiredIds={14262}},
-		{id=14275,name="[Deprecated] Scorpid Sting",subText="Rank 2",level=32,icon="Interface\\Icons\\Ability_Hunter_CriticalShot",school="Marksmanship"},
 		{id=19878,name="Track Demons",subText="",level=32,icon="Interface\\Icons\\Spell_Shadow_SummonFelHunter",school="Survival"}
 	},
 	[34] = {
@@ -126,8 +122,7 @@ ClassSpellsByLevel["HUNTER"] = {
 		{id=14267,name="Wing Clip",subText="Rank 2",level=38,icon="Interface\\Icons\\Ability_Rogue_Trip",school="Survival",requiredIds={2974}},
 		{id=45970,name="Steady Shot",subText="Rank 6",level=38,icon="Interface\\Icons\\Ability_Hunter_SteadyShot",school="Marksmanship"},
 		{id=45972,name="Steady Shot",subText="Rank 7",level=38,icon="Interface\\Icons\\Ability_Hunter_SteadyShot",school="Marksmanship",requiredIds={45970}},
-		{id=51498,name="Aspect of the Wolf",subText="Rank 4",level=38,icon="Interface\\Icons\\Ability_Mount_WhiteDireWolf",school="Beast Mastery",requiredIds={51497}},
-		{id=52415,name="Carve",subText="Rank 2",level=38,icon="Interface\\Icons\\INV_ThrowingKnife_06",school="Survival",requiredIds={51575}}
+		{id=51498,name="Aspect of the Wolf",subText="Rank 4",level=38,icon="Interface\\Icons\\Ability_Mount_WhiteDireWolf",school="Beast Mastery",requiredIds={51497}}
 	},
 	[40] = {
 		{id=13159,name="Aspect of the Pack",subText="",level=40,icon="Interface\\Icons\\Ability_Mount_WhiteTiger",school="Beast Mastery"},
@@ -142,7 +137,6 @@ ClassSpellsByLevel["HUNTER"] = {
 	},
 	[42] = {
 		{id=13553,name="Serpent Sting",subText="Rank 6",level=42,icon="Interface\\Icons\\Ability_Hunter_Quickshot",school="Marksmanship",requiredIds={13552}},
-		{id=14276,name="[Deprecated] Scorpid Sting",subText="Rank 3",level=42,icon="Interface\\Icons\\Ability_Hunter_CriticalShot",school="Marksmanship",requiredIds={14275}},
 		{id=14289,name="Multi-Shot",subText="Rank 3",level=42,icon="Interface\\Icons\\Ability_UpgradeMoonGlaive",school="Marksmanship",requiredIds={14288}},
 		{id=20909,name="Counterattack",subText="Rank 2",level=42,icon="Interface\\Icons\\Ability_Warrior_Challange",school="Survival",requiredIds={19306}}
 	},
@@ -177,7 +171,6 @@ ClassSpellsByLevel["HUNTER"] = {
 	},
 	[52] = {
 		{id=13543,name="Mend Pet",subText="Rank 6",level=52,icon="Interface\\Icons\\Ability_Hunter_MendPet",school="Beast Mastery",requiredIds={13542}},
-		{id=14277,name="[Deprecated] Scorpid Sting",subText="Rank 4",level=52,icon="Interface\\Icons\\Ability_Hunter_CriticalShot",school="Marksmanship",requiredIds={14276}},
 		{id=14286,name="Arcane Shot",subText="Rank 7",level=52,icon="Interface\\Icons\\Ability_ImpalingBolt",school="Marksmanship",requiredIds={14285}}
 	},
 	[54] = {
@@ -192,8 +185,7 @@ ClassSpellsByLevel["HUNTER"] = {
 		{id=14280,name="Viper Sting",subText="Rank 3",level=56,icon="Interface\\Icons\\Ability_Hunter_AimedShot",school="Marksmanship",requiredIds={14279}},
 		{id=20190,name="Aspect of the Wild",subText="Rank 2",level=56,icon="Interface\\Icons\\Spell_Nature_ProtectionformNature",school="Beast Mastery",requiredIds={20043}},
 		{id=14301,name="Immolation Trap Effect",subText="Rank 5",level=56,icon="Interface\\Icons\\Spell_Fire_FlameShock",school="Survival",requiredIds={14300}},
-		{id=45660,name="Viper Strike",subText="Rank 1",level=56,icon="Interface\\Icons\\Ability_Hunter_AimedShot",school="Beast Mastery"},
-		{id=52416,name="Carve",subText="Rank 3",level=56,icon="Interface\\Icons\\INV_ThrowingKnife_06",school="Survival",requiredIds={52415}}
+		{id=45660,name="Viper Strike",subText="Rank 1",level=56,icon="Interface\\Icons\\Ability_Hunter_AimedShot",school="Beast Mastery"}
 	},
 	[58] = {
 		{id=14322,name="Aspect of the Hawk",subText="Rank 6",level=58,icon="Interface\\Icons\\Spell_Nature_RavenForm",school="Beast Mastery",requiredIds={14321}},

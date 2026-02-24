@@ -56,7 +56,6 @@ OverridenSpells["DRUID"] = {
 	[22896] = {22842,22895},
 	[31018] = {22557,22568,22827,22828,22829},
 	[45969] = {5221,6800,8992,9829,9830},
-	[51430] = {24858},
 	[51451] = {51401},
 	[51452] = {51401,51451}
 }
@@ -88,7 +87,6 @@ ClassSpellsByLevel["DRUID"] = {
 		{id=5232,name="Mark of the Wild",subText="Rank 2",level=10,icon="Interface\\Icons\\Spell_Nature_Regeneration",school="Restoration",requiredIds={1126}},
 		{id=1058,name="Rejuvenation",subText="Rank 2",level=10,icon="Interface\\Icons\\Spell_Nature_Rejuvenation",school="Restoration",requiredIds={25299}},
 		{id=8924,name="Moonfire",subText="Rank 2",level=10,icon="Interface\\Icons\\Spell_Nature_StarFall",school="Balance",requiredIds={9835}},
-		{id=16689,name="Nature's Grasp",subText="Rank 1",level=10,icon="Interface\\Icons\\Spell_Nature_NaturesWrath",requiredTalent={id=301,tabIndex=1},school="Balance"},
 		{id=18960,name="Teleport: Moonglade",subText="",level=10,icon="Interface\\Icons\\Spell_Arcane_TeleportMoonglade",school="Balance"}
 	},
 	[12] = {
@@ -114,7 +112,6 @@ ClassSpellsByLevel["DRUID"] = {
 		{id=8938,name="Regrowth",subText="Rank 2",level=18,icon="Interface\\Icons\\Spell_Nature_ResistNature",school="Restoration",requiredIds={8936}},
 		{id=770,name="Faerie Fire",subText="Rank 1",level=18,icon="Interface\\Icons\\Spell_Nature_FaerieFire",school="Balance"},
 		{id=1062,name="Entangling Roots",subText="Rank 2",level=18,icon="Interface\\Icons\\Spell_Nature_StrangleVines",school="Balance",requiredIds={339}},
-		{id=16810,name="Nature's Grasp",subText="Rank 2",level=18,icon="Interface\\Icons\\Spell_Nature_NaturesWrath",school="Balance",requiredIds={16689}},
 		{id=2637,name="Hibernate",subText="Rank 1",level=18,icon="Interface\\Icons\\Spell_Nature_Sleep",school="Balance"}
 	},
 	[20] = {
@@ -162,8 +159,7 @@ ClassSpellsByLevel["DRUID"] = {
 		{id=9492,name="Rip",subText="Rank 2",level=28,icon="Interface\\Icons\\Ability_GhoulFrenzy",school="Feral Combat",requiredIds={1079}},
 		{id=2091,name="Rejuvenation",subText="Rank 5",level=28,icon="Interface\\Icons\\Spell_Nature_Rejuvenation",school="Restoration",requiredIds={2090}},
 		{id=8927,name="Moonfire",subText="Rank 5",level=28,icon="Interface\\Icons\\Spell_Nature_StarFall",school="Balance",requiredIds={8926}},
-		{id=5195,name="Entangling Roots",subText="Rank 3",level=28,icon="Interface\\Icons\\Spell_Nature_StrangleVines",school="Balance",requiredIds={1062}},
-		{id=16811,name="Nature's Grasp",subText="Rank 3",level=28,icon="Interface\\Icons\\Spell_Nature_NaturesWrath",school="Balance",requiredIds={16810}}
+		{id=5195,name="Entangling Roots",subText="Rank 3",level=28,icon="Interface\\Icons\\Spell_Nature_StrangleVines",school="Balance",requiredIds={1062}}
 	},
 	[30] = {
 		{id=6800,name="Shred",subText="Rank 2",level=30,icon="Interface\\Icons\\Spell_Shadow_VampiricAura",school="Feral Combat",requiredIds={5221}},
@@ -176,9 +172,7 @@ ClassSpellsByLevel["DRUID"] = {
 		{id=5180,name="Wrath",subText="Rank 5",level=30,icon="Interface\\Icons\\Spell_Nature_AbolishMagic",school="Balance",requiredIds={5179}},
 		{id=17390,name="Faerie Fire (Feral)",subText="Rank 2",level=30,icon="Interface\\Icons\\Spell_Nature_FaerieFire",school="Feral Combat",requiredIds={16857}},
 		{id=20739,name="Rebirth",subText="Rank 2",level=30,icon="Interface\\Icons\\Spell_Nature_Reincarnation",school="Restoration",requiredIds={20484}},
-		{id=24858,name="Moonkin Form",subText="Shapeshift",level=30,icon="Interface\\Icons\\Spell_Nature_ForceOfNature",requiredTalent={id=314,tabIndex=1},school="Balance"},
 		{id=24974,name="Insect Swarm",subText="Rank 2",level=30,icon="Interface\\Icons\\Spell_Nature_InsectSwarm",school="Balance",requiredIds={5570}},
-		{id=45708,name="Berserk",subText="",level=30,icon="Interface\\Icons\\Ability_Druid_Berserk",requiredTalent={id=279,tabIndex=2},school="Feral Combat"},
 		{id=51398,name="Swift Travel Form",subText="Shapeshift",level=30,icon="Interface\\Icons\\Ability_Druid_StagForm",school="Feral Combat"}
 	},
 	[32] = {
@@ -212,7 +206,6 @@ ClassSpellsByLevel["DRUID"] = {
 		{id=6780,name="Wrath",subText="Rank 6",level=38,icon="Interface\\Icons\\Spell_Nature_AbolishMagic",school="Balance",requiredIds={5180}},
 		{id=5196,name="Entangling Roots",subText="Rank 4",level=38,icon="Interface\\Icons\\Spell_Nature_StrangleVines",school="Balance",requiredIds={5195}},
 		{id=8955,name="Soothe Animal",subText="Rank 2",level=38,icon="Interface\\Icons\\Ability_Hunter_BeastSoothe",school="Balance",requiredIds={2908}},
-		{id=16812,name="Nature's Grasp",subText="Rank 4",level=38,icon="Interface\\Icons\\Spell_Nature_NaturesWrath",school="Balance",requiredIds={16811}},
 		{id=18657,name="Hibernate",subText="Rank 2",level=38,icon="Interface\\Icons\\Spell_Nature_Sleep",school="Balance",requiredIds={2637}}
 	},
 	[40] = {
@@ -230,9 +223,7 @@ ClassSpellsByLevel["DRUID"] = {
 		{id=22827,name="Ferocious Bite",subText="Rank 3",level=40,icon="Interface\\Icons\\Ability_Druid_FerociousBite",school="Feral Combat",requiredIds={22568}},
 		{id=24905,name="Moonkin Form (Passive)",subText="Passive",level=40,icon="Interface\\Icons\\Spell_Nature_ForceOfNature",school="Balance"},
 		{id=24907,name="Moonkin Aura",subText="",level=40,icon="Interface\\Icons\\Spell_Nature_MoonGlow",school="Balance"},
-		{id=24975,name="Insect Swarm",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Nature_InsectSwarm",school="Balance",requiredIds={24974}},
-		{id=45705,name="Tree of Life Form",subText="Shapeshift",level=40,icon="Interface\\Icons\\Ability_Druid_TreeofLife",requiredTalent={id=299,tabIndex=3},school="Restoration"},
-		{id=51430,name="Moonkin Form",subText="Shapeshift",level=40,icon="Interface\\Icons\\Spell_Nature_ForceOfNature",school="Balance",requiredIds={24858}}
+		{id=24975,name="Insect Swarm",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Nature_InsectSwarm",school="Balance",requiredIds={24974}}
 	},
 	[42] = {
 		{id=6787,name="Ravage",subText="Rank 2",level=42,icon="Interface\\Icons\\Ability_Druid_Ravage",school="Feral Combat",requiredIds={6785}},
@@ -268,7 +259,6 @@ ClassSpellsByLevel["DRUID"] = {
 		{id=9849,name="Claw",subText="Rank 4",level=48,icon="Interface\\Icons\\Ability_Druid_Rake",school="Feral Combat",requiredIds={5201}},
 		{id=9856,name="Regrowth",subText="Rank 7",level=48,icon="Interface\\Icons\\Spell_Nature_ResistNature",school="Restoration",requiredIds={9750}},
 		{id=9852,name="Entangling Roots",subText="Rank 5",level=48,icon="Interface\\Icons\\Spell_Nature_StrangleVines",school="Balance",requiredIds={5196}},
-		{id=16813,name="Nature's Grasp",subText="Rank 5",level=48,icon="Interface\\Icons\\Spell_Nature_NaturesWrath",school="Balance",requiredIds={16812}},
 		{id=22828,name="Ferocious Bite",subText="Rank 4",level=48,icon="Interface\\Icons\\Ability_Druid_FerociousBite",school="Feral Combat",requiredIds={22827}}
 	},
 	[50] = {
@@ -318,7 +308,6 @@ ClassSpellsByLevel["DRUID"] = {
 		{id=9876,name="Starfire",subText="Rank 6",level=58,icon="Interface\\Icons\\Spell_Arcane_StarFire",school="Balance",requiredIds={9875}},
 		{id=9835,name="Moonfire",subText="Rank 10",level=58,icon="Interface\\Icons\\Spell_Nature_StarFall",school="Balance",requiredIds={8921}},
 		{id=9853,name="Entangling Roots",subText="Rank 6",level=58,icon="Interface\\Icons\\Spell_Nature_StrangleVines",school="Balance",requiredIds={9852}},
-		{id=17329,name="Nature's Grasp",subText="Rank 6",level=58,icon="Interface\\Icons\\Spell_Nature_NaturesWrath",school="Balance",requiredIds={16813}},
 		{id=18658,name="Hibernate",subText="Rank 3",level=58,icon="Interface\\Icons\\Spell_Nature_Sleep",school="Balance",requiredIds={18657}},
 		{id=45736,name="Savage Bite",subText="",level=58,icon="Interface\\Icons\\Ability_Racial_Cannibalize",school="Feral Combat"}
 	},

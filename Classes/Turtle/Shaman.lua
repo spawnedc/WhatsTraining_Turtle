@@ -4,9 +4,7 @@ OverridenSpells["SHAMAN"] = {
 	[51533] = {45527},
 	[51534] = {45527,51533},
 	[51535] = {45527,51533,51534},
-	[51536] = {45527,51533,51534,51535},
-	[52420] = {51387},
-	[52422] = {51387,52420}
+	[51536] = {45527,51533,51534,51535}
 }
 ClassSpellsByLevel["SHAMAN"] = {
 	[1] = {
@@ -67,8 +65,7 @@ ClassSpellsByLevel["SHAMAN"] = {
 		{id=8056,name="Frost Shock",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Frost_FrostShock",school="Elemental Combat"},
 		{id=915,name="Lightning Bolt",subText="Rank 4",level=20,icon="Interface\\Icons\\Spell_Nature_Lightning",school="Elemental Combat",requiredIds={548}},
 		{id=6363,name="Searing Totem",subText="Rank 2",level=20,icon="Interface\\Icons\\Spell_Fire_SearingTotem",school="Elemental Combat",requiredIds={3599}},
-		{id=8033,name="Frostbrand Weapon",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Frost_FrostBrand",school="Enhancement"},
-		{id=51387,name="Lightning Strike",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Nature_ThunderClap",requiredTalent={id=256,tabIndex=2},school="Enhancement"}
+		{id=8033,name="Frostbrand Weapon",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Frost_FrostBrand",school="Enhancement"}
 	},
 	[22] = {
 		{id=8166,name="Poison Cleansing Totem",subText="",level=22,icon="Interface\\Icons\\Spell_Nature_PoisonCleansingTotem",school="Restoration"},
@@ -145,8 +142,7 @@ ClassSpellsByLevel["SHAMAN"] = {
 		{id=10478,name="Frost Resistance Totem",subText="Rank 2",level=38,icon="Interface\\Icons\\Spell_FrostResistanceTotem_01",school="Enhancement",requiredIds={8181}},
 		{id=8249,name="Flametongue Totem",subText="Rank 2",level=38,icon="Interface\\Icons\\Spell_Nature_GuardianWard",school="Enhancement",requiredIds={8227}},
 		{id=8161,name="Strength of Earth Totem",subText="Rank 3",level=38,icon="Interface\\Icons\\Spell_Nature_EarthBindTotem",school="Enhancement",requiredIds={8160}},
-		{id=10456,name="Frostbrand Weapon",subText="Rank 3",level=38,icon="Interface\\Icons\\Spell_Frost_FrostBrand",school="Enhancement",requiredIds={8038}},
-		{id=52420,name="Lightning Strike",subText="Rank 2",level=38,icon="Interface\\Icons\\Spell_Nature_ThunderClap",school="Enhancement",requiredIds={51387}}
+		{id=10456,name="Frostbrand Weapon",subText="Rank 3",level=38,icon="Interface\\Icons\\Spell_Frost_FrostBrand",school="Enhancement",requiredIds={8038}}
 	},
 	[40] = {
 		{id=8005,name="Healing Wave",subText="Rank 7",level=40,icon="Interface\\Icons\\Spell_Nature_MagicImmunity",school="Restoration",requiredIds={959}},
@@ -158,16 +154,13 @@ ClassSpellsByLevel["SHAMAN"] = {
 		{id=930,name="Chain Lightning",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Nature_ChainLightning",school="Elemental Combat",requiredIds={421}},
 		{id=6365,name="Searing Totem",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Fire_SearingTotem",school="Elemental Combat",requiredIds={6364}},
 		{id=16190,name="Mana Tide Totem",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Frost_SummonWaterElemental",school="Restoration"},
-		{id=51363,name="Spirit Link",subText="",level=40,icon="Interface\\Icons\\Spell_Shaman_SpiritLink",requiredTalent={id=248,tabIndex=3},school="Restoration"},
 		{id=45505,name="Feral Spirit",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Shaman_FeralSpirit",races={"ORC"},school="Enhancement"},
-		{id=45509,name="Bloodlust",subText="",level=40,icon="Interface\\Icons\\Spell_Nature_BloodLust",requiredTalent={id=264,tabIndex=2},school="Enhancement"},
 		{id=45525,name="Earth Shield",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Nature_SkinofEarth",school="Enhancement"},
 		{id=45534,name="Lava Lash",subText="Rank 1",level=40,icon="Interface\\Icons\\Ability_Shaman_Lavalash",school="Enhancement"},
 		{id=45502,name="Ethereal Form",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Shaman_AstralShift",races={"TAUREN"},school="Restoration"},
 		{id=45500,name="Totemic Slam",subText="",level=40,icon="Interface\\Icons\\Ability_Smash",school="Enhancement"}
 	},
 	[42] = {
-		{id=10613,name="[Deprecated] Windfury Totem",subText="Rank 2",level=42,icon="Interface\\Icons\\Spell_Nature_Windfury",school="Enhancement"},
 		{id=8835,name="Grace of Air Totem",subText="Rank 1",level=42,icon="Interface\\Icons\\Spell_Nature_InvisibilityTotem",school="Enhancement"},
 		{id=11314,name="Fire Nova Totem",subText="Rank 4",level=42,icon="Interface\\Icons\\Spell_Fire_SealOfFire",school="Elemental Combat",requiredIds={8499}},
 		{id=10537,name="Fire Resistance Totem",subText="Rank 2",level=42,icon="Interface\\Icons\\Spell_FireResistanceTotem_01",school="Enhancement",requiredIds={8184}},
@@ -212,7 +205,6 @@ ClassSpellsByLevel["SHAMAN"] = {
 		{id=10448,name="Flame Shock",subText="Rank 5",level=52,icon="Interface\\Icons\\Spell_Fire_FlameShock",school="Elemental Combat",requiredIds={10447}},
 		{id=11315,name="Fire Nova Totem",subText="Rank 5",level=52,icon="Interface\\Icons\\Spell_Fire_SealOfFire",school="Elemental Combat",requiredIds={11314}},
 		{id=10442,name="Strength of Earth Totem",subText="Rank 4",level=52,icon="Interface\\Icons\\Spell_Nature_EarthBindTotem",school="Enhancement",requiredIds={8161}},
-		{id=10614,name="[Deprecated] Windfury Totem",subText="Rank 3",level=52,icon="Interface\\Icons\\Spell_Nature_Windfury",school="Enhancement",requiredIds={10613}},
 		{id=45529,name="Calm Elements",subText="Rank 1",level=52,icon="Interface\\Icons\\Spell_Nature_Swiftness",school="Restoration"}
 	},
 	[54] = {
@@ -230,8 +222,7 @@ ClassSpellsByLevel["SHAMAN"] = {
 		{id=15208,name="Lightning Bolt",subText="Rank 10",level=56,icon="Interface\\Icons\\Spell_Nature_Lightning",school="Elemental Combat",requiredIds={403}},
 		{id=10605,name="Chain Lightning",subText="Rank 4",level=56,icon="Interface\\Icons\\Spell_Nature_ChainLightning",school="Elemental Combat",requiredIds={2860}},
 		{id=10587,name="Magma Totem",subText="Rank 4",level=56,icon="Interface\\Icons\\Spell_Fire_SelfDestruct",school="Elemental Combat",requiredIds={10586}},
-		{id=16342,name="Flametongue Weapon",subText="Rank 6",level=56,icon="Interface\\Icons\\Spell_Fire_FlameTounge",school="Enhancement",requiredIds={16341}},
-		{id=52422,name="Lightning Strike",subText="Rank 3",level=56,icon="Interface\\Icons\\Spell_Nature_ThunderClap",school="Enhancement",requiredIds={52420}}
+		{id=16342,name="Flametongue Weapon",subText="Rank 6",level=56,icon="Interface\\Icons\\Spell_Fire_FlameTounge",school="Enhancement",requiredIds={16341}}
 	},
 	[58] = {
 		{id=10428,name="Stoneclaw Totem",subText="Rank 6",level=58,icon="Interface\\Icons\\Spell_Nature_StoneClawTotem",school="Elemental Combat",requiredIds={10427}},
@@ -255,8 +246,6 @@ ClassSpellsByLevel["SHAMAN"] = {
 		{id=25357,name="Healing Wave",subText="Rank 10",level=60,icon="Interface\\Icons\\Spell_Nature_MagicImmunity",school="Restoration",requiredIds={331}},
 		{id=29228,name="Flame Shock",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Fire_FlameShock",school="Elemental Combat",requiredIds={10448}},
 		{id=45514,name="Feral Spirit",subText="Rank 2",level=60,icon="Interface\\Icons\\Spell_Shaman_FeralSpirit",races={"ORC"},school="Enhancement",requiredIds={45505}},
-		{id=45511,name="[Deprecated] Bloodlust",subText="Rank 2",level=60,icon="Interface\\Icons\\Spell_Nature_BloodLust",school="Enhancement"},
-		{id=45521,name="[Deprecated] Stormstrike",subText="Rank 2",level=60,icon="Interface\\Icons\\Ability_Shaman_StormStrike",school="Enhancement"},
 		{id=51526,name="Earth Shield",subText="Rank 3",level=60,icon="Interface\\Icons\\Spell_Nature_SkinofEarth",school="Enhancement",requiredIds={51525}}
 	}
 }

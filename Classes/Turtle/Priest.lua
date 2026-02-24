@@ -1,7 +1,5 @@
 setfenv(1, WhatsTraining)
 OverridenSpells["PRIEST"] = {
-	[51479] = {51478},
-	[51480] = {51478,51479},
 	[52640] = {52638},
 	[52642] = {52638,52640},
 	[52644] = {52638,52640,52642},
@@ -66,9 +64,7 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=9578,name="Fade",subText="Rank 2",level=20,icon="Interface\\Icons\\Spell_Magic_LesserInvisibilty",school="Shadow Magic",requiredIds={586}},
 		{id=9484,name="Shackle Undead",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Nature_Slow",school="Discipline"},
 		{id=7128,name="Inner Fire",subText="Rank 2",level=20,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Discipline",requiredIds={588}},
-		{id=15237,name="Holy Nova",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_HolyNova",requiredTalent={id=192,tabIndex=2},school="Holy"},
 		{id=14914,name="Holy Fire",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_SearingLight",school="Holy"},
-		{id=15407,name="Mind Flay",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Shadow_SiphonMana",requiredTalent={id=207,tabIndex=3},school="Shadow Magic"},
 		{id=6346,name="Fear Ward",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_Excorcism",school="Discipline"},
 		{id=2651,name="Elune's Grace",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_ElunesGrace",races={"NIGHTELF"},school="Discipline"},
 		{id=2944,name="Devouring Plague",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Shadow_BlackPlague",races={"UNDEAD"},school="Shadow Magic"},
@@ -105,8 +101,6 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=6063,name="Heal",subText="Rank 3",level=28,icon="Interface\\Icons\\Spell_Holy_Heal02",school="Holy",requiredIds={2055}},
 		{id=8104,name="Mind Blast",subText="Rank 4",level=28,icon="Interface\\Icons\\Spell_Shadow_UnholyFrenzy",school="Shadow Magic",requiredIds={8103}},
 		{id=8124,name="Psychic Scream",subText="Rank 2",level=28,icon="Interface\\Icons\\Spell_Shadow_PsychicScream",school="Shadow Magic",requiredIds={8122}},
-		{id=15430,name="Holy Nova",subText="Rank 2",level=28,icon="Interface\\Icons\\Spell_Holy_HolyNova",school="Holy",requiredIds={15237}},
-		{id=17311,name="Mind Flay",subText="Rank 2",level=28,icon="Interface\\Icons\\Spell_Shadow_SiphonMana",school="Shadow Magic",requiredIds={15407}},
 		{id=19276,name="Devouring Plague",subText="Rank 2",level=28,icon="Interface\\Icons\\Spell_Shadow_BlackPlague",races={"UNDEAD"},school="Shadow Magic",requiredIds={2944}},
 		{id=19308,name="Shadowguard",subText="Rank 2",level=28,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={28377}},
 		{id=28378,name="Shadowguard",subText="Rank 2",level=28,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={19308}}
@@ -121,8 +115,6 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=6065,name="Power Word: Shield",subText="Rank 5",level=30,icon="Interface\\Icons\\Spell_Holy_PowerWordShield",school="Discipline",requiredIds={3747}},
 		{id=14752,name="Divine Spirit",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Holy_DivineSpirit",school="Discipline"},
 		{id=15263,name="Holy Fire",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Holy_SearingLight",school="Holy",requiredIds={15262}},
-		{id=15286,name="Vampiric Embrace",subText="",level=30,icon="Interface\\Icons\\Spell_Shadow_UnsummonBuilding",requiredTalent={id=213,tabIndex=3},school="Shadow Magic"},
-		{id=15487,name="Silence",subText="",level=30,icon="Interface\\Icons\\Spell_Shadow_ImpPhaseShift",requiredTalent={id=212,tabIndex=3},school="Shadow Magic"},
 		{id=19262,name="Touch of Weakness",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"UNDEAD"},school="Shadow Magic",requiredIds={19249}},
 		{id=19251,name="Touch of Weakness",subText="Rank 3",level=30,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"UNDEAD"},school="Shadow Magic",requiredIds={19262}},
 		{id=19271,name="Feedback",subText="Rank 2",level=30,icon="Interface\\Icons\\Spell_Shadow_RitualOfSacrifice",races={"HUMAN"},school="Discipline",requiredIds={13896}},
@@ -130,8 +122,7 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=19289,name="Elune's Grace",subText="Rank 2",level=30,icon="Interface\\Icons\\Spell_Holy_ElunesGrace",races={"NIGHTELF"},school="Discipline",requiredIds={2651}},
 		{id=724,name="Lightwell",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy"},
 		{id=7001,name="Lightwell Renew",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy"},
-		{id=45555,name="Pain Spike",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic"},
-		{id=51476,name="Enlighten",subText="",level=30,icon="Interface\\Icons\\btnholyscriptures",requiredTalent={id=180,tabIndex=1},school="Discipline"}
+		{id=45555,name="Pain Spike",subText="Rank 1",level=30,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic"}
 	},
 	[32] = {
 		{id=552,name="Abolish Disease",subText="",level=32,icon="Interface\\Icons\\Spell_Nature_NullifyDisease",school="Holy"},
@@ -158,8 +149,6 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=2791,name="Power Word: Fortitude",subText="Rank 4",level=36,icon="Interface\\Icons\\Spell_Holy_WordFortitude",school="Discipline",requiredIds={1245}},
 		{id=988,name="Dispel Magic",subText="Rank 2",level=36,icon="Interface\\Icons\\Spell_Holy_DispelMagic",school="Discipline",requiredIds={527}},
 		{id=15264,name="Holy Fire",subText="Rank 4",level=36,icon="Interface\\Icons\\Spell_Holy_SearingLight",school="Holy",requiredIds={15263}},
-		{id=15431,name="Holy Nova",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Holy_HolyNova",school="Holy",requiredIds={15430}},
-		{id=17312,name="Mind Flay",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Shadow_SiphonMana",school="Shadow Magic",requiredIds={17311}},
 		{id=19277,name="Devouring Plague",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Shadow_BlackPlague",races={"UNDEAD"},school="Shadow Magic",requiredIds={19276}},
 		{id=19309,name="Shadowguard",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={28378}},
 		{id=28379,name="Shadowguard",subText="Rank 3",level=36,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={19309}}
@@ -178,7 +167,6 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=1006,name="Inner Fire",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Discipline",requiredIds={602}},
 		{id=10874,name="Mana Burn",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Shadow_ManaBurn",school="Shadow Magic",requiredIds={8131}},
 		{id=14818,name="Divine Spirit",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Holy_DivineSpirit",school="Discipline",requiredIds={14752}},
-		{id=15473,name="Shadowform",subText="",level=40,icon="Interface\\Icons\\Spell_Shadow_Shadowform",requiredTalent={id=216,tabIndex=3},school="Shadow Magic"},
 		{id=19264,name="Touch of Weakness",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"UNDEAD"},school="Shadow Magic",requiredIds={19251}},
 		{id=19252,name="Touch of Weakness",subText="Rank 4",level=40,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"UNDEAD"},school="Shadow Magic",requiredIds={19264}},
 		{id=19273,name="Feedback",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Shadow_RitualOfSacrifice",races={"HUMAN"},school="Discipline",requiredIds={19271}},
@@ -186,11 +174,8 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=19291,name="Elune's Grace",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Holy_ElunesGrace",races={"NIGHTELF"},school="Discipline",requiredIds={19289}},
 		{id=10060,name="Power Infusion",subText="",level=40,icon="Interface\\Icons\\Spell_Holy_PowerInfusion",school="Discipline"},
 		{id=27870,name="Lightwell",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Holy_SummonLightwell",school="Holy",requiredIds={724}},
-		{id=45562,name="Proclaim Champion",subText="",level=40,icon="Interface\\Icons\\Spell_Holy_ProclaimChampion_02",requiredTalent={id=199,tabIndex=2},school="Holy"},
 		{id=45563,name="Champion's Grace",subText="",level=40,icon="Interface\\Icons\\Spell_Holy_ChampionsGrace",school="Holy"},
-		{id=45569,name="[Deprecated] Champion's Resolve",subText="",level=40,icon="Interface\\Icons\\Spell_Holy_ProclaimChampion",school="Holy"},
-		{id=57701,name="Pain Spike",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic",requiredIds={45555}},
-		{id=51478,name="Chastise",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Holy_UnyieldingFaith",requiredTalent={id=183,tabIndex=1},school="Discipline"}
+		{id=57701,name="Pain Spike",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Shadow_PainSpike",school="Shadow Magic",requiredIds={45555}}
 	},
 	[42] = {
 		{id=10957,name="Shadow Protection",subText="Rank 2",level=42,icon="Interface\\Icons\\Spell_Shadow_AntiShadow",school="Shadow Magic",requiredIds={976}},
@@ -206,16 +191,11 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=10927,name="Renew",subText="Rank 7",level=44,icon="Interface\\Icons\\Spell_Holy_Renew",school="Holy",requiredIds={6078}},
 		{id=10909,name="Mind Vision",subText="Rank 2",level=44,icon="Interface\\Icons\\Spell_Holy_MindVision",school="Shadow Magic",requiredIds={2096}},
 		{id=10911,name="Mind Control",subText="Rank 2",level=44,icon="Interface\\Icons\\Spell_Shadow_ShadowWordDominate",school="Shadow Magic",requiredIds={605}},
-		{id=17313,name="Mind Flay",subText="Rank 4",level=44,icon="Interface\\Icons\\Spell_Shadow_SiphonMana",school="Shadow Magic",requiredIds={17312}},
 		{id=19278,name="Devouring Plague",subText="Rank 4",level=44,icon="Interface\\Icons\\Spell_Shadow_BlackPlague",races={"UNDEAD"},school="Shadow Magic",requiredIds={19277}},
 		{id=19310,name="Shadowguard",subText="Rank 4",level=44,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={28379}},
-		{id=27799,name="Holy Nova",subText="Rank 4",level=44,icon="Interface\\Icons\\Spell_Holy_HolyNova",school="Holy",requiredIds={15431}},
 		{id=28380,name="Shadowguard",subText="Rank 4",level=44,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={19310}},
 		{id=45564,name="Champion's Bond",subText="Rank 1",level=44,icon="Interface\\Icons\\Spell_Holy_ChampionsBond",school="Holy"},
 		{id=52642,name="Searing Shot",subText="Rank 3",level=44,icon="Interface\\Icons\\Ability_SearingArrow",races={"NIGHTELF"},school="Discipline",requiredIds={52640}}
-	},
-	[45] = {
-		{id=51479,name="Chastise",subText="Rank 2",level=45,icon="Interface\\Icons\\Spell_Holy_UnyieldingFaith",school="Discipline",requiredIds={51478}}
 	},
 	[46] = {
 		{id=10963,name="Greater Heal",subText="Rank 2",level=46,icon="Interface\\Icons\\Spell_Holy_GreaterHeal",school="Holy",requiredIds={2060}},
@@ -254,19 +234,14 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=10964,name="Greater Heal",subText="Rank 3",level=52,icon="Interface\\Icons\\Spell_Holy_GreaterHeal",school="Holy",requiredIds={10963}},
 		{id=10946,name="Mind Blast",subText="Rank 8",level=52,icon="Interface\\Icons\\Spell_Shadow_UnholyFrenzy",school="Shadow Magic",requiredIds={10945}},
 		{id=10953,name="Mind Soothe",subText="Rank 3",level=52,icon="Interface\\Icons\\Spell_Holy_MindSooth",school="Shadow Magic",requiredIds={8192}},
-		{id=17314,name="Mind Flay",subText="Rank 5",level=52,icon="Interface\\Icons\\Spell_Shadow_SiphonMana",school="Shadow Magic",requiredIds={17313}},
 		{id=19279,name="Devouring Plague",subText="Rank 5",level=52,icon="Interface\\Icons\\Spell_Shadow_BlackPlague",races={"UNDEAD"},school="Shadow Magic",requiredIds={19278}},
 		{id=19311,name="Shadowguard",subText="Rank 5",level=52,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={28380}},
-		{id=27800,name="Holy Nova",subText="Rank 5",level=52,icon="Interface\\Icons\\Spell_Holy_HolyNova",school="Holy",requiredIds={27799}},
 		{id=28381,name="Shadowguard",subText="Rank 5",level=52,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={19311}}
 	},
 	[54] = {
 		{id=10934,name="Smite",subText="Rank 8",level=54,icon="Interface\\Icons\\Spell_Holy_HolySmite",school="Holy",requiredIds={10933}},
 		{id=10900,name="Power Word: Shield",subText="Rank 9",level=54,icon="Interface\\Icons\\Spell_Holy_PowerWordShield",school="Discipline",requiredIds={10899}},
 		{id=15267,name="Holy Fire",subText="Rank 7",level=54,icon="Interface\\Icons\\Spell_Holy_SearingLight",school="Holy",requiredIds={15266}}
-	},
-	[55] = {
-		{id=51480,name="Chastise",subText="Rank 3",level=55,icon="Interface\\Icons\\Spell_Holy_UnyieldingFaith",school="Discipline",requiredIds={51479}}
 	},
 	[56] = {
 		{id=10958,name="Shadow Protection",subText="Rank 3",level=56,icon="Interface\\Icons\\Spell_Shadow_AntiShadow",school="Shadow Magic",requiredIds={10957}},
@@ -297,7 +272,6 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=10901,name="Power Word: Shield",subText="Rank 10",level=60,icon="Interface\\Icons\\Spell_Holy_PowerWordShield",school="Discipline",requiredIds={17}},
 		{id=10938,name="Power Word: Fortitude",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Holy_WordFortitude",school="Discipline",requiredIds={10937}},
 		{id=15261,name="Holy Fire",subText="Rank 8",level=60,icon="Interface\\Icons\\Spell_Holy_SearingLight",school="Holy",requiredIds={15267}},
-		{id=18807,name="Mind Flay",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Shadow_SiphonMana",school="Shadow Magic",requiredIds={17314}},
 		{id=19266,name="Touch of Weakness",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"UNDEAD"},school="Shadow Magic",requiredIds={19253}},
 		{id=19254,name="Touch of Weakness",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Shadow_DeadofNight",races={"UNDEAD"},school="Shadow Magic",requiredIds={19266}},
 		{id=19275,name="Feedback",subText="Rank 5",level=60,icon="Interface\\Icons\\Spell_Shadow_RitualOfSacrifice",races={"HUMAN"},school="Discipline",requiredIds={19274}},
@@ -310,7 +284,6 @@ ClassSpellsByLevel["PRIEST"] = {
 		{id=25315,name="Renew",subText="Rank 10",level=60,icon="Interface\\Icons\\Spell_Holy_Renew",school="Holy",requiredIds={139}},
 		{id=25316,name="Prayer of Healing",subText="Rank 5",level=60,icon="Interface\\Icons\\Spell_Holy_PrayerOfHealing02",school="Holy",requiredIds={10961}},
 		{id=27681,name="Prayer of Spirit",subText="Rank 1",level=60,icon="Interface\\Icons\\Spell_Holy_PrayerofSpirit",school="Discipline"},
-		{id=27801,name="Holy Nova",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Holy_HolyNova",school="Holy",requiredIds={27800}},
 		{id=27841,name="Divine Spirit",subText="Rank 4",level=60,icon="Interface\\Icons\\Spell_Holy_DivineSpirit",school="Discipline",requiredIds={14819}},
 		{id=28382,name="Shadowguard",subText="Rank 6",level=60,icon="Interface\\Icons\\Spell_Nature_LightningShield",races={"TROLL"},school="Shadow Magic",requiredIds={19312}},
 		{id=52646,name="Searing Shot",subText="Rank 5",level=60,icon="Interface\\Icons\\Ability_SearingArrow",races={"NIGHTELF"},school="Discipline",requiredIds={52644}},

@@ -19,9 +19,7 @@ OverridenSpells["PALADIN"] = {
 	[19899] = {19891},
 	[19900] = {19891,19899},
 	[19998] = {7294,10298,10299,10300,10301},
-	[21084] = {20154},
-	[51557] = {20066},
-	[51558] = {20066,51557}
+	[21084] = {20154}
 }
 ClassSpellsByLevel["PALADIN"] = {
 	[1] = {
@@ -79,9 +77,7 @@ ClassSpellsByLevel["PALADIN"] = {
 		{id=879,name="Exorcism",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_Excorcism_02",school="Holy"},
 		{id=5502,name="Sense Undead",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_SenseUndead",school="Holy"},
 		{id=19750,name="Flash of Light",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_FlashHeal",school="Holy"},
-		{id=20218,name="Sanctity Aura",subText="",level=20,icon="Interface\\Icons\\Spell_Holy_MindVision",requiredTalent={id=446,tabIndex=1},school="Holy"},
 		{id=26573,name="Consecration",subText="Rank 1",level=20,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy"},
-		{id=20217,name="Blessing of Kings",subText="",level=20,icon="Interface\\Icons\\Spell_Magic_MageArmor",requiredTalent={id=431,tabIndex=3},school="Retribution"},
 		{id=1866,name="Holy Strike",subText="Rank 3",level=20,icon="Interface\\Icons\\INV_Sword_01",school="Holy",requiredIds={678}}
 	},
 	[22] = {
@@ -158,7 +154,6 @@ ClassSpellsByLevel["PALADIN"] = {
 		{id=20344,name="Judgement of Light",subText="Rank 2",level=40,icon="Interface\\Icons\\Spell_Holy_HealingAura",school="Holy",requiredIds={20185}},
 		{id=20922,name="Consecration",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20116}},
 		{id=5589,name="Hammer of Justice",subText="Rank 3",level=40,icon="Interface\\Icons\\Spell_Holy_SealOfMight",school="Protection",requiredIds={5588}},
-		{id=20066,name="Repentance",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Holy_PrayerOfHealing",requiredTalent={id=439,tabIndex=3},school="Retribution"},
 		{id=25912,name="Holy Shock",subText="Rank 1",level=40,icon="Interface\\Icons\\Spell_Holy_SearingLight",school="Holy"},
 		{id=45017,name="Summon Thalassian Warhorse",subText="Summon",level=40,icon="Interface\\Icons\\Spell_Nature_Swiftness",school="Holy"},
 		{id=45028,name="Summon Scarlet Warhorse",subText="Summon",level=40,icon="Interface\\Icons\\Spell_Nature_Swiftness",school="Holy"},
@@ -201,8 +196,7 @@ ClassSpellsByLevel["PALADIN"] = {
 		{id=20292,name="Seal of Righteousness",subText="Rank 7",level=50,icon="Interface\\Icons\\Ability_ThunderBolt",school="Holy",requiredIds={20291}},
 		{id=20348,name="Seal of Light",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Holy_HealingAura",school="Holy",requiredIds={20347}},
 		{id=20345,name="Judgement of Light",subText="Rank 3",level=50,icon="Interface\\Icons\\Spell_Holy_HealingAura",school="Holy",requiredIds={20344}},
-		{id=20923,name="Consecration",subText="Rank 4",level=50,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20922}},
-		{id=51557,name="Repentance",subText="Rank 2",level=50,icon="Interface\\Icons\\Spell_Holy_PrayerOfHealing",school="Retribution",requiredIds={20066}}
+		{id=20923,name="Consecration",subText="Rank 4",level=50,icon="Interface\\Icons\\Spell_Holy_InnerFire",school="Holy",requiredIds={20922}}
 	},
 	[52] = {
 		{id=10313,name="Exorcism",subText="Rank 5",level=52,icon="Interface\\Icons\\Spell_Holy_Excorcism_02",school="Holy",requiredIds={10312}},
@@ -261,7 +255,6 @@ ClassSpellsByLevel["PALADIN"] = {
 		{id=45020,name="Summon Argent Charger",subText="Summon",level=60,icon="Interface\\Icons\\Ability_Mount_Charger",school="Holy"},
 		{id=45029,name="Summon Scarlet Charger",subText="Summon",level=60,icon="Interface\\Icons\\Ability_Mount_Charger",school="Holy"},
 		{id=45620,name="Conviction",subText="Rank 2",level=60,icon="Interface\\Icons\\Spell_Holy_RetributionAura",school="Retribution",requiredIds={45619}},
-		{id=51558,name="Repentance",subText="Rank 3",level=60,icon="Interface\\Icons\\Spell_Holy_PrayerOfHealing",school="Retribution",requiredIds={51557}},
 		{id=51743,name="Flash of Light",subText="Rank 7",level=60,icon="Interface\\Icons\\Spell_Holy_FlashHeal",school="Holy",requiredIds={19943}}
 	}
 }
