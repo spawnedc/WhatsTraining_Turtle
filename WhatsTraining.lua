@@ -1,5 +1,7 @@
 setfenv(1, WhatsTraining)
-WhatsTraining = {}
+WhatsTraining = {
+  initialised = false
+}
 
 function WhatsTraining:Initialise()
   local name = UnitName("player")
@@ -24,13 +26,18 @@ function WhatsTraining:Initialise()
   WhatsTrainingUI:Initialize()
 
   WhatsTrainingUI:SetItems(PlayerData.spellsByCategory)
+
+  WhatsTraining.initialised = true
 end
 
 function WhatsTraining:Refresh()
+  if WhatsTraining.initialised == false then
+    return
+  end
   PlayerData:SetLevel(UnitLevel("player"))
   PlayerData:GetKnownSpells()
   PlayerData:GetAvailableSpells()
-  
+
   WhatsTrainingUI:ClearItems()
   WhatsTrainingUI:SetItems(PlayerData.spellsByCategory)
   WhatsTrainingUI:Update()
